@@ -129,4 +129,28 @@ for a in range(50):
 * Explain the arguments we're passing to setBlock, and the coordinates.
 * Ask the student which coordinate should be increasing.
 
+The bulldozer
+-------------
+*Objective:* work with more embedded loops and relative coordinates.
 
+* This script lets you clear a large area and leave it suitable for building.
+* In minecraft, an empty space is a block of type *AIR*
+
+```python
+import mcpi.minecraft as minecraft
+import mcpi.block as block
+import time
+mc = minecraft.Minecraft.create()
+
+player_pos = mc.player.getTilePos()
+for x in range(-10,10):
+    for z in range(-10,10):
+        for y in range(0,10):
+            mc.setBlock(player_pos.x+x, player_pos.y+y, player_pos.z+z, block.AIR.id)
+```
+
+After running this script, you should find that a large area was cleared as in the screenshot.
+
+* Explain relative positions to the player
+* Explain the *range(start,stop)* function, possibly using IDLE
+* Explain why the *y* loop starts at zero. It's because in minecraft, sea level is zero, and we want to clear an area, not dig down.
