@@ -14,3 +14,8 @@ import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 mc.postToChat("hello minecraft !")
 ```
+
+Coordinates
+-----------
+*Objective:* display coordinates as the play is moving around the screen
+
