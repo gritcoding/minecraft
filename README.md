@@ -112,7 +112,7 @@ The tower
 ---------
 *Objective:* introduce programmatic placement of blocks
 
-You can stand anywhere for this
+You can stand anywhere for this. After running, you should see a huge tower of stone blocks either in front of you or behind you.
 
 ```python
 import mcpi.minecraft as minecraft
