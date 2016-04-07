@@ -75,3 +75,32 @@ while True:
         print("on the fence")
 ```
 
+The cross, two if conditions
+----------------------------
+*Objective:* introduce embedded if conditions and creative string concatenation
+
+* Enhance your fence to look like a cross, like in the screenshot
+* Figure out where the midpoint is. If previously you built around the *z* coordinate, then this time your other coordinate is *x* and vice versa.
+* You're ready to write the code.
+
+```python
+import mcpi.minecraft as minecraft
+import time
+mc = minecraft.Minecraft.create()
+
+while True:
+    time.sleep(1)
+    pos = mc.player.getTilePos()
+    if pos.x > -119:
+        north_south = "north"
+        if pos.z > 43:
+            print(north_south + "/west")
+        else:
+            print(north_south + "/east")
+    elif pos.x < -119:
+        north_south = "south"
+        if pos.z > 43:
+            print(north_south + "/west")
+        else:
+            print(north_south + "/east")
+```
