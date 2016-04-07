@@ -15,6 +15,8 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("hello minecraft !")
 ```
 
+![hello world](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hello_world.png)
+
 Coordinates
 -----------
 *Objective:* display coordinates as the play is moving around the screen
@@ -31,6 +33,7 @@ print(pos.y)
 * Notice that this prints only one time. 
 * Move around and notice how your coordinates change.
 
+![coordinates](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/coordinates.png)
 
 Coordinates in a loop
 ---------------------
@@ -75,6 +78,8 @@ while True:
         print("on the fence")
 ```
 
+![fence](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/fence.png)
+
 The cross, two if conditions
 ----------------------------
 *Objective:* introduce embedded if conditions and creative string concatenation
@@ -105,6 +110,8 @@ while True:
             print(north_south + "/east")
 ```
 
+![cross](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/cross.png)
+
 * Explain string concatenation again
 * Explain greater or equal versus greater
 
@@ -124,6 +131,8 @@ pos = mc.player.getTilePos()
 for a in range(50):
     mc.setBlock(pos.x+3, pos.y+a, pos.z, block.STONE.id)
 ```
+
+![tower](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/tower.png)
 
 * Explain the *range(50)*.
 * Explain the arguments we're passing to setBlock, and the coordinates.
@@ -150,6 +159,7 @@ for x in range(-10,10):
 ```
 
 After running this script, you should find that a large area was cleared as in the screenshot.
+![bulldozer](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/bulldozer.png)
 
 * Explain relative positions to the player
 * Explain the *range(start,stop)* function, possibly using IDLE
