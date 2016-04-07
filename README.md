@@ -51,3 +51,27 @@ while True:
 * Explain the X/Y/Z coordinate system. *Note that in videogames including minecraft, Z is depth*
 * Explain what strings and numbers are, and why one must convert numbers to string using +
 
+The fence, if conditions
+------------------------
+*Objective:* introduce if conditions by detecting on what side of a fence one is
+
+* Go to a flat area
+* Build a small fence as shown on the screenshot
+* Step on the fence, and walk along it, to determine its orientation. It will be either *x* or *z*.
+* Once you know what coordinate you built it along, you're ready to write the code
+```python
+import mcpi.minecraft as minecraft
+import time
+mc = minecraft.Minecraft.create()
+
+while True:
+    time.sleep(1)
+    pos = mc.player.getTilePos()
+    if pos.x > -119:
+        print("north of the fence")
+    elif pos.x < -119:
+        print("south of the fence")
+    else:
+        print("on the fence")
+```
+
