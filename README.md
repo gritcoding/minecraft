@@ -104,3 +104,29 @@ while True:
         else:
             print(north_south + "/east")
 ```
+
+* Explain string concatenation again
+* Explain greater or equal versus greater
+
+The tower
+---------
+*Objective:* introduce programmatic placement of blocks
+
+You can stand anywhere for this
+
+```python
+import mcpi.minecraft as minecraft
+import mcpi.block as block
+import time
+mc = minecraft.Minecraft.create()
+
+pos = mc.player.getTilePos()
+for a in range(50):
+    mc.setBlock(pos.x+3, pos.y+a, pos.z, block.STONE.id)
+```
+
+* Explain the *range(50)*.
+* Explain the arguments we're passing to setBlock, and the coordinates.
+* Ask the student which coordinate should be increasing.
+
+
