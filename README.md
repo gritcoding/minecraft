@@ -187,3 +187,40 @@ mc.setBlocks(pos.x - x_range,
 * If we didn't add **initial_distance**, the player would be trapped inside a cube of iron ore.
 * The cube may appear in front or behind you, or off to the sides. You may add this initial_distance to the **x** or **z** dimensions to suit your needs.
 
+Hollow cube
+-----------
+*Objective:* build a cube which is empty. Because solid cubes are not very useful.
+
+* The basic technique is that we build a solid Iron Ore cube first, using the technique above, and then we build a smaller one inside, with blocks of type **AIR**.
+
+```python
+import mcpi.minecraft as minecraft
+import mcpi.block as block
+import time
+mc = minecraft.Minecraft.create()
+
+pos = mc.player.getTilePos()
+initial_distance = 8
+x_range = 5
+z_range = 5
+y_range = 3
+mc.setBlocks(pos.x - x_range,
+             pos.y,
+             pos.z - z_range + initial_distance,
+             pos.x + x_range,
+             pos.y + y_range,
+             pos.z + z_range + initial_distance,
+             block.IRON_ORE.id
+             )
+mc.setBlocks(pos.x - x_range + 1,
+             pos.y,
+             pos.z - z_range + initial_distance + 1,
+             pos.x + x_range - 1,
+             pos.y + y_range - 1,
+             pos.z + z_range + initial_distance - 1,
+             block.AIR.id
+             )
+```
+
+* Explain why we have the +1 / -1
+* Explain why the y dimension is special. Because we don't need to hollow out the ground floor.
