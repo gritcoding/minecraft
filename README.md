@@ -237,5 +237,9 @@ mc.setBlocks(pos.x - x_range + 1,
 
 ![hollow cube](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hollow_cube.png)
 
+* Once the cube is built, you can break up a few blocks to convince yourself that it is indeed hollow.
 * Explain why we have the +1 / -1
 * Explain why the y dimension is special. Because we don't need to hollow out the ground floor.
+* For fun: 
+ * go in an place some torches
+ * place a few windows using the glass block
