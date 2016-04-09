@@ -15,6 +15,8 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("hello minecraft !")
 ```
 
+![hello world](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hello_world.png)
+
 Coordinates
 -----------
 *Objective:* display coordinates as the play is moving around the screen
@@ -31,6 +33,7 @@ print(pos.y)
 * Notice that this prints only one time. 
 * Move around and notice how your coordinates change.
 
+![coordinates](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/coordinates.png)
 
 Coordinates in a loop
 ---------------------
@@ -75,6 +78,8 @@ while True:
         print("on the fence")
 ```
 
+![fence](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/fence.png)
+
 The cross, two if conditions
 ----------------------------
 *Objective:* introduce embedded if conditions and creative string concatenation
@@ -108,6 +113,8 @@ while True:
 * Explain string concatenation again
 * Explain greater or equal versus greater
 
+![cross](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/cross.png)
+
 The tower
 ---------
 *Objective:* introduce programmatic placement of blocks
@@ -124,6 +131,8 @@ pos = mc.player.getTilePos()
 for a in range(50):
     mc.setBlock(pos.x+3, pos.y+a, pos.z, block.STONE.id)
 ```
+
+![tower](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/tower.png)
 
 * Explain the *range(50)*.
 * Explain the arguments we're passing to setBlock, and the coordinates.
@@ -148,6 +157,8 @@ for x in range(-10,10):
         for y in range(0,10):
             mc.setBlock(player_pos.x+x, player_pos.y+y, player_pos.z+z, block.AIR.id)
 ```
+
+![bulldozer](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/bulldozer.png)
 
 After running this script, you should find that a large area was cleared as in the screenshot.
 
@@ -183,6 +194,8 @@ mc.setBlocks(pos.x - x_range,
              block.IRON_ORE.id
              )
 ```
+
+![cube](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/build_cube.png)
 
 * If we didn't add **initial_distance**, the player would be trapped inside a cube of iron ore.
 * The cube may appear in front or behind you, or off to the sides. You may add this initial_distance to the **x** or **z** dimensions to suit your needs.
@@ -221,6 +234,8 @@ mc.setBlocks(pos.x - x_range + 1,
              block.AIR.id
              )
 ```
+
+![hollow cube](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hollow_cube.png)
 
 * Explain why we have the +1 / -1
 * Explain why the y dimension is special. Because we don't need to hollow out the ground floor.
