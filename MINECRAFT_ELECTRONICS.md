@@ -12,15 +12,31 @@ A **resistor** resists or limits current in a circuit. An LED can be damaged by 
 
 A **current** is the rate at which electrical energy flows through a circuit and is measured in amperes (A) or amps. Smaller currents are measured in milliApms (mA). You can read more about circuits [here](http://www.allaboutcircuits.com/textbook/direct-current/#chpt-1).
 
+## Setup instructions
+* The Raspberry PI should be up and running, no need to shut it down.
+* Insert the breakout board into the breadboard, being careful to line up the pins like on the picture below.
+* Connect the header cable between the Raspberry PI and the breakout board with the correct orientation (look at the red part of the cable ribbon).
+
+![Empty Breadboard](images/breadboard_empty.jpg)
+
+![RPI and Breadboard](images/rpi_and_breadboard.jpg)
+
+Through the rest of the lesson, keep the breadboard oriented in a way that the 
+lettering on the breakout board is visible to you (i.e. you should see SDA, GND, 
+etc).
+
 ## A simple circuit
 
-- Connect an LED, a 330 Ohm resistor and two short wires to the positive + (red line) and negative - (blue line) rows as shown below.
+- Connect an LED, a 330 Ohm resistor and two short wires to the positive + (red line) and negative - (blue line) rows as shown.
 
 **IMAGE**
 
 ## A programmable circuit
 
-- Connect the positive + wire to GPIO pin 17.
+- Connect the positive + wire to GPIO pin 17.- 
+
+![Single LED](images/blinking_led_setup.jpg)
+
 - Run [led.py](scripts/intro.py)
 
 ```python
@@ -39,4 +55,11 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 
 - Explain setup, output and cleanup.
 - :bulb: Make your LED flash forever: [led_flash.py](scripts/led_flash.py)
-- :bulb: Make your LED flash only 3 times.
+- :bulb: Make your LED flash only 3 times: `for x in range(0,3)`
+- :bulb: *Modify rent program to flash LED 3 times before before ejecting.*
+
+## Programmable Button
+
+
+
+
