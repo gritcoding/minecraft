@@ -15,7 +15,7 @@ def flash(t):
 
 try:
     while True:
-        flash(seconds)  # seconds to flash
+        flash(seconds)  # how many seconds to flash?
 finally:
     GPIO.cleanup()
 
