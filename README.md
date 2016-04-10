@@ -39,7 +39,7 @@
   - house (+carpets)
 - Magic Carpet
 - Treasure Hunt
-- Electronics
+- [Electronics](MINECRAFT_ELECTRONICS.md)
   - Light an LED
     - non-programatically
     - programatically and blink
