@@ -40,6 +40,9 @@
 - Magic Carpet
 - Treasure Hunt
 - Electronics
-  - Light an LED (+welcome mat, 3 LEDs: eject countdown)
+  - Light an LED
+    - non-programatically
+    - programatically and blink
+    - welcome mat, 3 LEDs: eject countdown
   - try : finally : cleanup
   - 7 segment display?
