@@ -41,6 +41,8 @@ print(pos.y)
 
 ![coordinates](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/coordinates.png)
 
+* Explain the print function
+
 Coordinates in a loop
 ---------------------
 *Objective:* show continuously updating coordinates
@@ -56,8 +58,9 @@ while True:
 ```
 
 * Have the player move around, and look at how coordinates are changing
+* Explain the while True loop
 * Explain sleep
-* Explain the X/Y/Z coordinate system. *Note that in videogames including minecraft, Z is depth*
+* Explain the X/Y/Z coordinate system. **Note that in videogames including minecraft, Z is depth**
 * Explain what strings and numbers are, and why one must convert numbers to string using +
 
 The fence, if conditions
