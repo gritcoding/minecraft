@@ -330,6 +330,7 @@ The Tunnel
 *Objective:* introduce loops with interval and modulo
 
 * The following scripts lets you dig a tunnel, lit up with torches every 3 blocks
+* This is complicated enough that you may need to explain on a piece of paper, particularly the direction concept.
 
 ```python
 import mcpi.minecraft as minecraft
