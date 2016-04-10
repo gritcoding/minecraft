@@ -7,6 +7,22 @@
 - Introduction + Setup Raspberry Pi
 - Video: pair programming
 - Introduction to Minecraft
+
+    Key | Action 
+    --- | ------
+    W	| Forward
+    A	| Left 
+    S	| Backward 
+    D	|	Right
+    Left-click | Hit
+    Right-click | Place block
+    Mouse-scroll | Hotbar select
+    E	|	Inventory
+    Space	|	Jump
+    Double Space	|	Fly / Fall
+    Esc	| Pause / Game menu
+    Tab	| Release mouse cursor
+
   - Challenges for parents
     - move to position 0,0,0
     - Learn to fly and swim
