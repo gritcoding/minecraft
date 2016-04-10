@@ -1,6 +1,6 @@
 # Electronics / GPIO (General Purpose IO)
 
-### Introduction
+## Introduction
 
 A **Breadboard** is a reusbale device with a number of holes into which you push wires or components to create circuits. Breadboards  allow you to create circuits without needing to solder all the components. The two rows of holes at the top and bottom are for power.
 
@@ -12,13 +12,13 @@ A **resistor** resists or limits current in a circuit. An LED can be damaged by 
 
 A **current** is the rate at which electrical energy flows through a circuit and is measured in amperes (A) or amps. Smaller currents are measured in milliApms (mA). You can read more about circuits [here](http://www.allaboutcircuits.com/textbook/direct-current/#chpt-1).
 
-### A simple circuit
+## A simple circuit
 
 - Connect an LED, a 330 Ohm resistor and two short wires to the positive + (red line) and negative - (blue line) rows as shown below.
 
 **IMAGE**
 
-### A programmable circuit
+## A programmable circuit
 
 - Connect the positive + wire to GPIO pin 17.
 - Run [led.py](scripts/intro.py)
@@ -38,3 +38,5 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 ```
 
 - Explain setup, output and cleanup.
+- :bulb: Make your LED flash forever: [led_flash.py](scripts/led_flash.py)
+- :bulb: Make your LED flash only 3 times.
