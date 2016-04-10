@@ -127,6 +127,15 @@ pos = mc.player.getTilePos()
 
 #mc.postToChat("x=" + x + " y=" + y + " z=" + z)
 
+# GO!
+
+# Hint: you can simplify the code by getting x, y, z in one go!
+# Use the command below to replace the code above.
+
+#x, y, z = mc.player.getTilePos()
+
+# GO!
+
 # 10. Another variable type is called a boolean
 # This means either True or False
 
