@@ -330,6 +330,7 @@ build_house(4, 4, 3)
  * Add multiple windows.
  * Add a *carpet* on the floor.
  * Build a swimming pool next to your house.
+ * *Complicated*: build a staircase
 
 The Tunnel
 ----------
@@ -410,4 +411,6 @@ build_tunnel(length, direction)
 * Explain the direction concept. We need to know which direction to build in, and that will determine which direction to increase by the length of the tunnel.
 * Explain the while loop to build the torches.
 * Explain modulo as a way of having steps. In this case, we want torches every 3 blocks.
+* Extra credit:
+ * Build a tunnel which digs a few blocks under the ground, and places a staircase for easy access on both ends
 
