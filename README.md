@@ -7,7 +7,8 @@
 - Introduction + Setup Raspberry Pi
 - Video: pair programming
 - Introduction to Minecraft
-
+  - Keys
+  
     Key | Action 
     --- | ------
     W	| Forward
