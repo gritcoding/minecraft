@@ -35,7 +35,7 @@ etc).
 
 - Connect the positive + wire to GPIO pin 17.- 
 
-**IMAGE**
+![Single LED](images/blinking_led_setup.jpg)
 
 - Run [led.py](scripts/intro.py)
 
