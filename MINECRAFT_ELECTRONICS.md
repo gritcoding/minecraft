@@ -33,7 +33,7 @@ etc).
 
 ## A programmable circuit
 
-- Connect the positive + wire to GPIO pin 17.- 
+- Connect the positive + wire to GPIO pin 17.
 
 ![Single LED](images/blinking_led_setup.jpg)
 
@@ -56,9 +56,46 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 - Explain setup, output and cleanup.
 - :bulb: Make your LED flash forever: [led_flash.py](scripts/led_flash.py)
 - :bulb: Make your LED flash only 3 times: `for x in range(0,3)`
-- :bulb: *Modify rent program to flash LED 3 times before before ejecting.*
+- :bulb: Modify your circuit and program to light 3 LEDS in a row.
+- :bulb: *Modify rent program to flash LEDs 3 times before before ejecting player.*
 
 ## Programmable Button
+
+- Add a button to the circuit: the button has four pins and fits nicely accross the midway point of the breadboard.
+- Connect the button to GPIO pin 4 (positive +), and a 330 Ohm resistor to GND (negative -) as shown.
+- You also need a resistor for the button to 'pull up' the button input to 3.3 volts, otherwise your button will generate spurious presses.
+- :eyeglasses: When the button is not pressed (and no connection is made) the wire that connects the GPIO will be at 3.3 volts and the GPIO pin will interpret this as signal '1' or True (try printing the value of `GPIO.input(BUTTON)`). When you press the button, the circuit between the left and right hand pins will be completed abnd the GPIO wire is 'pulled down' to 0 volts. Now the GPIO pin will interpret the signal as '0' or False.
+ 
+![three_led_pushbutton](images/three_leds_pushbutton.jpg)
+
+![three_led_pushbutton](images/three_leds_pushbutton_top.jpg)
+
+- Run [led_detonator.py](scripts/led_detonator)
+
+```python
+import RPi.GPIO as GPIO
+import mcpi.minecraft as minecraft
+import time
+
+mc = minecraft.Minecraft.create()
+
+BUTTON = 4
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(BUTTON, GPIO.IN)   # setup for input
+
+try:
+    while GPIO.input(BUTTON):
+        time.sleep(0.1)
+
+    mc.postToChat('BOOM!')
+    
+finally:
+    GPIO.cleanup()  # reset GPIO and disable circuitry
+```
+
+- :bulb: *Modify bulldozer program to use the button to clear blocks.*
+- :bulb: Flash 3 LEDs (or single LED 3 times) before detonating.
+
 
 
 
