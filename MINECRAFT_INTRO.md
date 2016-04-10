@@ -146,6 +146,8 @@ for a in range(50):
 * Explain the *range(50)*.
 * Explain the arguments we're passing to setBlock, and the coordinates.
 * Ask the student which coordinate should be increasing.
+* Extra credit
+ * Build a fence instead of a tower
 
 The bulldozer
 -------------
@@ -174,6 +176,8 @@ After running this script, you should find that a large area was cleared as in t
 * Explain relative positions to the player
 * Explain the *range(start,stop)* function, possibly using IDLE
 * Explain why the *y* loop starts at zero. It's because in minecraft, sea level is zero, and we want to clear an area, not dig down.
+* Extra credit
+ * Dig underground
 
 
 Building a cube, faster
@@ -249,6 +253,8 @@ mc.setBlocks(pos.x - x_range + 1,
 * Once the cube is built, you can break up a few blocks to convince yourself that it is indeed hollow.
 * Explain why we have the +1 / -1
 * Explain why the y dimension is special. Because we don't need to hollow out the ground floor.
+* Extra credit:
+ * Build an enclosed area which is open at the top
 * For fun: 
  * go in and place some torches.
  * place a few windows using the glass block.
