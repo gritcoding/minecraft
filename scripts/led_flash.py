@@ -8,9 +8,9 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED, GPIO.OUT)
 
 def flash(t):
-    GPIO.output(LED, True)
+    GPIO.output(LED, True)  # LED on
     time.sleep(t)
-    GPIO.output(LED, False)
+    GPIO.output(LED, False) # LED off
     time.sleep(t)
 
 try:
