@@ -311,6 +311,8 @@ def build_house(width, depth, height):
 build_house(4, 4, 3)
 ```
 
+![house function](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/house_function.png)
+
 * Explain functions, and parameters
 * For fun:
  * Build a staircase inside the house, leading up to the roof.
@@ -392,6 +394,8 @@ length = int(raw_input("length of tunnel?"))
 direction = int(raw_input("direction?"))
 build_tunnel(length, direction)
 ```
+
+![tunnel](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/tunnel.png)
 
 * Explain the direction concept. We need to know which direction to build in, and that will determine which direction to increase by the length of the tunnel.
 * Explain the while loop to build the torches.
