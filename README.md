@@ -2,12 +2,33 @@
 
 ## Outline
 
-- General Introductions
-- Wooden Block Game
-- Introduction + Setup Raspberry Pi
-- Video: pair programming
-- Introduction to Minecraft
-  - Keys
+### General Introductions
+
+### Wooden Block Game
+- Minecraft coordinate system:
+  - x-axis: East (positive), West (negative)
+  - z-axis: South (positive), North (negative)
+  - y-axis: High (positive), Low (negative)
+  - Right-handed coordinates: thumb = x, index = y, middle = z
+  
+
+
+- Instructions: 
+  - B (Block) *x,y,z*
+  - L (Loop) *i* = start,end
+  - F (Function)
+- Task:
+  - Write instructions to build a structure.
+  - Send your instructions (and parent) to another builder.
+  - Win a prize if your structure is built successfully.
+
+### Setup Raspberry Pi
+
+### Introduction to Minecraft
+  - What is Minecraft?
+  - What is Minecraft Pi (features and limitations).
+  - Play the game!
+  - Keys:
   
     Key | Action 
     --- | ------
@@ -25,11 +46,15 @@
     Tab	| Release mouse cursor
 
   - Challenges for parents
-    - move to position 0,0,0
+    - Move to position 0,0,0
     - Learn to fly and swim
-    - build a house with stone, door, windows and wooden roof (+fence around the house)
-    - what are the dimensions of your house?
+    - Build a house with stone, door, windows and wooden roof (+fence around the house)
+    - What are the dimensions of your house?
+
+### Video: pair programming
+
 - Introduction to Python: [intro.py](scripts/intro.py)
+  - [RefCard](https://dzone.com/refcardz/core-python)
   - Case-sensitive
   - Indentation for blocks
   - Run: F5
