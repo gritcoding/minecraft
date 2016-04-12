@@ -1,8 +1,10 @@
 # Minecraft Programming using Python and Raspberry Pi
 
-### General Introductions
+Lesson plan is based on a 10am - 4pm day (including snack breaks!)
 
-### Wooden Block Game
+### General Introductions (15 mins: 10am - 10:15am)
+
+### Wooden Block Game (30 mins: 10:15 - 10:45am)
 - Minecraft coordinate system:
   - x-axis: East (positive), West (negative)
   - z-axis: South (positive), North (negative)
@@ -20,15 +22,15 @@
   - Send your instructions (and parent) to another builder.
   - :gift: Win a prize if your structure is built successfully!
 
-### Setup Raspberry Pi
+### Setup Raspberry Pi (15 mins: 10:45am - 11am)
 - Pi board
-- SD Card
+- SD Card (pre-setup)
 - HDMI (display) cable
 - Keyboard
 - Mouse
 - Power
 
-### Introduction to Minecraft
+### Introduction to Minecraft (20 mins: 11am - 11:20am)
   - What is Minecraft?
   - What is Minecraft Pi (features and limitations)
   - Play the game!
@@ -55,38 +57,58 @@
     - Build a house with stone, door, windows and wooden roof (+fence around the house)
     - What are the dimensions of your house?
 
-### Introduction to Python: 
+### Introduction to Python (40 mins: 11:20am - noon)
 - Why Python?
 - [Python RefCard](https://dzone.com/refcardz/core-python)
-- In-game intro: [intro.py](scripts/intro.py)
-  - Case-sensitive
-  - Indentation for blocks
+  - Shell
+  - IDLE editor
   - Run: F5
   - Break: CTRL+C 
+  - Case-sensitive
+  - Indentation for blocks
+- In-game intro: [intro.py](scripts/intro.py) (WIP)
+  - Comments
+  - Printing
+  - Variables
+  - Basic maths operators (add, subtract, multiply)
+  - Basic variable types (strings, integers)
+  - Concatenating strings
+  - Casting an integer to a string
+  - Booleans (True / False)
+  - Inequalities (Greater Than / Less Than)
+  - If/Else statements
+  - For Loops
+  - *While Loops*
+  - *Lists*
+  - *List methods (append, extend)*
+  - *Adding lists together with + *
 
-### Minecraft Programming
+  
+### Minecraft Programming (60 - 70 mins: split accross lunch)
 - [Instructions](MINECRAFT_INTRO.md)
-- tower
-- house (+carpets)
-- Magic Carpet
-- Treasure Hunt
+- Tower
+- Bulldozer
+- Cube, Hollow Cube, House (+carpets)
+- Rent + Eject Timer ?
+- Tunnel
+- Treasure Hunt ?
 
-### Lunch Break
+### Lunch Break (30 mins)
 
-### Minecraft Quiz
+### Minecraft Quiz (30 mins - TBD)
 - Ideas:
   - (Bingo)[http://catchmyparty.com/blog/free-printable-minecraft-bingo-game]
   - Trivia Quiz (in teams)
 - :gift: Prizes!
 
-### Electronics
+### Electronics (30 - 45 mins)
 - [Instructions](MINECRAFT_ELECTRONICS.md)
 - Light an LED
-  - non-programatically
-  - programatically and blink
-  - welcome mat, 3 LEDs: eject countdown
+  - Non-programatically
+  - Programatically and blink
+  - Bulldozer: button
+  - Rent: 3 LEDs (or 7 Segment display): eject countdown
 - try : finally : cleanup
-- 7 segment display?
 
-### Craft Crossing
+### Crafty Crossing
 - TBD
