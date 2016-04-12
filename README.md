@@ -11,22 +11,28 @@
   - y-axis: High (positive), Low (negative)
   - Right-handed coordinates: thumb = x, index = y, middle = z
   
-
+![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
 
 - Instructions: 
   - B (Block) *x,y,z*
   - L (Loop) *i* = start,end
   - F (Function)
-- Task:
+- :trophy: Task:
   - Write instructions to build a structure.
   - Send your instructions (and parent) to another builder.
-  - Win a prize if your structure is built successfully.
+  - :gift: Win a prize if your structure is built successfully!
 
 ### Setup Raspberry Pi
+- Pi board
+- SD Card
+- HDMI (display) cable
+- Keyboard
+- Mouse
+- Power
 
 ### Introduction to Minecraft
   - What is Minecraft?
-  - What is Minecraft Pi (features and limitations).
+  - What is Minecraft Pi (features and limitations)
   - Play the game!
   - Keys:
   
@@ -45,29 +51,36 @@
     Esc	| Pause / Game menu
     Tab	| Release mouse cursor
 
-  - Challenges for parents
+  - :trophy: Challenges for parents
     - Move to position 0,0,0
     - Learn to fly and swim
     - Build a house with stone, door, windows and wooden roof (+fence around the house)
     - What are the dimensions of your house?
 
-### Video: pair programming
-
-- Introduction to Python: [intro.py](scripts/intro.py)
-  - [RefCard](https://dzone.com/refcardz/core-python)
+### Introduction to Python: 
+- Why Python?
+- [Python RefCard](https://dzone.com/refcardz/core-python)
+- In-game intro: [intro.py](scripts/intro.py)
   - Case-sensitive
   - Indentation for blocks
   - Run: F5
   - Break: CTRL+C 
-- [Introduction](MINECRAFT_INTRO.md)
-  - tower
-  - house (+carpets)
+
+### Minecraft Programming
+- [Instructions](MINECRAFT_INTRO.md)
+- tower
+- house (+carpets)
 - Magic Carpet
 - Treasure Hunt
-- [Electronics](MINECRAFT_ELECTRONICS.md)
-  - Light an LED
-    - non-programatically
-    - programatically and blink
-    - welcome mat, 3 LEDs: eject countdown
-  - try : finally : cleanup
-  - 7 segment display?
+
+### Electronics
+- [Instructions](MINECRAFT_ELECTRONICS.md)
+- Light an LED
+  - non-programatically
+  - programatically and blink
+  - welcome mat, 3 LEDs: eject countdown
+- try : finally : cleanup
+- 7 segment display?
+
+### Craft Crossing
+- TBD
