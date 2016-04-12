@@ -1,7 +1,5 @@
 # Minecraft Programming using Python and Raspberry Pi
 
-## Outline
-
 ### General Introductions
 
 ### Wooden Block Game
@@ -72,6 +70,14 @@
 - house (+carpets)
 - Magic Carpet
 - Treasure Hunt
+
+### Lunch Break
+
+### Minecraft Quiz
+- Ideas:
+  - (Bingo)[http://catchmyparty.com/blog/free-printable-minecraft-bingo-game]
+  - Trivia Quiz (in teams)
+- :gift: Prizes!
 
 ### Electronics
 - [Instructions](MINECRAFT_ELECTRONICS.md)
