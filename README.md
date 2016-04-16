@@ -34,6 +34,8 @@ Lesson plan is based on a 10am - 4pm day (including snack breaks!)
   - What is Minecraft?
   - What is Minecraft Pi (features and limitations)
   - Play the game!
+    - Menu -> Minecraft
+    - Start Game -> Create New (you can create new worlds till you get one you like)
   - Keys:
   
     Key | Action 
@@ -46,7 +48,8 @@ Lesson plan is based on a 10am - 4pm day (including snack breaks!)
     Right-click | Place block
     Mouse-scroll | Hotbar select
     E	|	Inventory
-    Space	|	Jump
+    Space	|	Jump / Fly up
+    Left Shift | Crouch / Fly down
     Double Space	|	Fly / Fall
     Esc	| Pause / Game menu
     Tab	| Release mouse cursor
@@ -54,8 +57,9 @@ Lesson plan is based on a 10am - 4pm day (including snack breaks!)
   - :trophy: Challenges for parents
     - Move to position 0,0,0
     - Learn to fly and swim
-    - Build a house with stone, door, windows and wooden roof (+fence around the house)
-    - What are the dimensions of your house?
+    - How big (x, z) is your world?
+    - Build a house with stone walls, door, windows and wooden roof (bonus: fence around the house)
+    - What are the dimensions (x, y, z) of your house?
 
 ### Introduction to Python (40 mins: 11:20am - noon)
 - Why Python?
