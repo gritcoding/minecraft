@@ -1,6 +1,7 @@
 # Minecraft Programming using Python and Raspberry Pi
 
-Lesson plan is based on a 10am - 4pm day (including snack breaks!)
+- Lesson plan is based on a 10am - 4pm day (including snack breaks!)
+- Students will be a parent-child pair
 
 ### General Introductions (15 mins: 10am - 10:15am)
 
