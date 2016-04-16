@@ -54,10 +54,11 @@ c = a + b
 # 5. You can use other operators like subtract (-) and multiply (*)
 # Try some below by replacing the word with the correct operator
 
-# a times b
-# b minus a
-# 12 times 4
-# 103 add 999
+#print a times b
+#print b minus a
+#print 12 times 4
+#print 103 add 999
+#print 100 divide 25
 
 # GO!
 
@@ -195,9 +196,26 @@ steves_age = 15
 
 # GO!
 
+# 13. You can create your own commands, or functions using def(ine)
+
+#def whereAmI():
+#    mc.postToChat('You are here.')
+
+# Now try 'calling' the function:
+
+#whereAmI()
+
+# GO!
+
+# Now move your North-South-East-West code inside the function.
+# Remember to indent!
+
+# Can you call the function many times? Try from the Shell as well.
+
 # 13. How can we keep the program running continuously while we play?
 
-####  While loop
+#while True:
+    
 
 #### CTRL+C to exit
 
