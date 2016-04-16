@@ -172,13 +172,15 @@ steves_age = 15
 
 # GO!
 
-# We can ask many questions using elif (else if) and use
-# not to mean the opposite.
+# Try moving from North to South and running the code above
+
+# We can ask many questions using elif (else if) and use 'not'
+# to mean the opposite.
 
 #south = pos.z < 0
 #north = not south
 #west = pos.x operator 0  # fix me using less than
-#east = pos.x operator 0  # fix me using greater than (equal to?)
+#east = pos.x operator 0  # fix me using greater than (and equal to)
 
 #if north and east:
 #    message = "You are in the North East"
@@ -193,7 +195,15 @@ steves_age = 15
 
 # GO!
 
-# 13. You can keep many items in a type of variable called a list
+# 13. How can we keep the program running continuously while we play?
+
+####  While loop
+
+#### CTRL+C to exit
+
+#### Or use a conditition!  x=0, x=0
+
+# 14. You can keep many items in a type of variable called a list
 
 colours = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
 
