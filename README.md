@@ -34,7 +34,9 @@
 
 ### Introduction to Minecraft (20 mins: 11am - 11:20am)
   - What is Minecraft?
-  - What is Minecraft Pi (features and limitations)
+    - [What is Minecraft all about?](http://minemum.com/what-is-minecraft)
+  - What is Minecraft Pi? (features and limitations)
+    - [Pi Edition](http://minecraft.gamepedia.com/Pi_Edition)
   - Play the game!
     - Menu -> Minecraft
     - Start Game -> Create New (you can create new worlds till you get one you like)
