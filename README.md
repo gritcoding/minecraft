@@ -74,7 +74,7 @@
 - Getting started:
   - Menu -> Programming -> IDLE 2
   - Shell
-  - File -> Open -> minecraft/scripts/intro.py -> IDLE editor
+  - File -> Open -> minecraft/scripts/[intro.py](scripts/intro.py) -> IDLE editor
   - Run: F5
   - Break: CTRL+C 
   - Case-sensitive
