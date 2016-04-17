@@ -27,13 +27,16 @@
 - Pi board
 - SD Card (pre-setup)
 - HDMI (display) cable
+- Wifi
 - Keyboard
 - Mouse
 - Power
 
 ### Introduction to Minecraft (20 mins: 11am - 11:20am)
   - What is Minecraft?
-  - What is Minecraft Pi (features and limitations)
+    - [What is Minecraft all about?](http://minemum.com/what-is-minecraft)
+  - What is Minecraft Pi? (features and limitations)
+    - [Pi Edition](http://minecraft.gamepedia.com/Pi_Edition)
   - Play the game!
     - Menu -> Minecraft
     - Start Game -> Create New (you can create new worlds till you get one you like)
@@ -62,19 +65,23 @@
     - Build a house with stone walls, door, windows and wooden roof (bonus: fence around the house)
     - What are the dimensions (x, y, z) of your house?
 
+![House](screenshots/house.png)
+
 ### Introduction to Python (40 mins: 11:20am - noon)
 - Why Python?
-- [Python RefCard](https://dzone.com/refcardz/core-python)
+  - [A great first programming language](http://readwrite.com/2014/07/08/what-makes-python-easy-to-learn/)
+  - [Python RefCard](https://dzone.com/refcardz/core-python)
+- Getting started:
+  - Menu -> Programming -> IDLE 2
   - Shell
-  - IDLE editor
+  - File -> Open -> minecraft/scripts/[intro.py](scripts/intro.py) -> IDLE editor
   - Run: F5
   - Break: CTRL+C 
   - Case-sensitive
-  - Indentation for blocks
-- In-game intro: [intro.py](scripts/intro.py) (WIP)
+  - Indentation (for blocks)
+- Learning Objectives:
   - Comments
   - Printing
-  - Variables
   - Basic maths operators (add, subtract, multiply)
   - Basic variable types (strings, integers)
   - Concatenating strings
@@ -83,10 +90,10 @@
   - Inequalities (Greater Than / Less Than)
   - If/Else statements
   - For Loops
-  - *While Loops*
-  - *Lists*
-  - *List methods (append, extend)*
-  - *Adding lists together with + *
+  - While Loops
+  - Lists
+
+![House](screenshots/wall.png)
 
   
 ### Minecraft Programming (60 - 70 mins: split accross lunch)
