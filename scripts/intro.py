@@ -1,6 +1,8 @@
 # Welcome! This is a Python program file
 
+import time
 import mcpi.minecraft as minecraft
+import mcpi.block as block
 mc = minecraft.Minecraft.create()
 
 # The lines that start with a hash (#) are comments
@@ -143,16 +145,17 @@ pos = mc.player.getTilePos()
 raspberry_pi_is_fun = True
 raspberry_pi_is_expensive = False
 
-# We can also compare two variables using ==
+# We can also compare two variables using == (equal) or != (not equal)
 
 steves_age = 15
 #your_age =  # fill in your age
 
 #print(your_age == steves_age)  # this prints either True or False
+#print(your_age != steves_age)  # and what does this print?
 
 # GO!
 
-# 11. We can use less than and greater than too - these are < and >
+# 11. We can use less than and greater than too -- these are < and >
 
 #steve_is_older = steves_age > your_age
 
@@ -198,239 +201,100 @@ steves_age = 15
 
 # 13. You can create your own commands, or functions using def(ine)
 
-#def whereAmI():
-#    mc.postToChat('You are here.')
+def whereAmI():
+    mc.postToChat('You are here.')
 
-# Now try 'calling' the function:
+# Try 'calling' the function:
 
 #whereAmI()
 
 # GO!
 
 # Now move your North-South-East-West code inside the function.
-# Remember to indent!
+# Remember to indent! (and also to update position inside the loop)
 
-# Can you call the function many times? Try from the Shell as well.
+# Can you call the function many times? (Try from the Shell as well)
 
-# 13. How can we keep the program running continuously while we play?
+# 14. How can we keep the program running continuously while we play?
 
 #while True:
-    
-
-#### CTRL+C to exit
-
-#### Or use a conditition!  x=0, x=0
-
-# 14. You can keep many items in a type of variable called a list
-
-colours = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
-
-# You can check whether a colour is in the list
-
-# print('Black' in colours)  # Prints True or False
+#    whereAmI()
 
 # GO!
 
-# You can add to the list with append
+# CTRL+C to exit ('while True' will run forever!)
 
-colours.append('Black')
-colours.append('White')
+# The loop runs too fast! Can we slow it down?
 
-# print('Black' in colours)  # Should this be different now?
-
-# GO!
-
-# You can add a list to a list with extend
-
-more_colours = ['Gray', 'Navy', 'Pink']
-
-colours.extend(more_colours)
-
-# Try printing the list to see what's in it
+# Try using the time.sleep(seconds) function inside the loop.
 
 # GO!
 
-# 14. You can add two lists together in to a new list using +
 
-primary_colours = ['Red', 'Blue', 'Yellow']
-secondary_colours = ['Purple', 'Orange', 'Green']
+# 15. Can we make the loop exit on a 'condition'?
+#     How about when the player is at position 0, 0, 0 ?
 
-main_colours = primary_colours + secondary_colours
-
-# Try printing main_colours
-
-# 15. You can find how many there are by using len(your_list). Try it below
-
-# How many colours are there in main_colours?
+# Hint: keep looping while x, y, x not equal to 0, 0, 0
 
 # GO!
 
-all_colours = colours + main_colours
+#while condition:
+#    whereAmI()
 
-# How many colours are there in all_colours?
-# Do it here. Try to think what you expect before you run it
+# 16. We can also loop over numbers
 
-# GO!
+# What do you expect the code below to do? What numbers are printed?
+# Can you print 
 
-# Did you get what you expected? If not, why not?
-
-# 16. You can make sure you don't have duplicates by adding to a set
-
-even_numbers = [2, 4, 6, 8, 10, 12]
-multiples_of_three = [3, 6, 9, 12]
-
-numbers = even_numbers + multiples_of_three
-# print(numbers, len(numbers))
-numbers_set = set(numbers)
-# print(numbers_set, len(numbers_set))
+#for a in range(0, 10):
+#    print(a)
 
 # GO!
 
-colour_set = set(all_colours)
-# How many colours do you expect to be in this time?
-# Do you expect the same or not? Think about it first
+# 17. It's Minecraft! Let's start building
 
-# 17. You can use a loop to look over all the items in a list
-
-my_class = ['Sarah', 'Bob', 'Jim', 'Tom', 'Lucy', 'Sophie', 'Liz', 'Ed']
-
-# Below is a multi-line comment
-# Delete the ''' from before and after to uncomment the block
-
-'''
-for student in my_class:
-    print(student)
-'''
-
-# Add all the names of people in your group to this list
-
-# Remember the difference between append and extend. You can use either.
-
-# Now write a loop to print a number (starting from 1) before each name
-
-# 18. You can split up a string by index
-
-full_name = 'Dominic Adrian Smith'
-
-first_letter = full_name[0]
-last_letter = full_name[19]
-first_three = full_name[:3]  # [0:3 also works]
-last_three = full_name[-3:]  # [17:] and [17:20] also work
-middle = full_name[8:14]
-
-# Try printing these, and try to make a word out of the individual letters
-
-# 19. You can also split the string on a specific character
-
-my_sentence = "Hello, my name is Fred"
-parts = my_sentence.split(',')
-
-# print(parts)
-# print(type(parts))  # What type is this variable? What can you do with it?
+#mc.setBlock(0, 0, 0, block.STONE.id)
 
 # GO!
 
-my_long_sentence = "This is a very very very very very very long sentence"
-
-# Now split the sentence and use this to print out the number of words
-
-# GO! (Clues below if you're stuck)
-
-# Clue: Which character do you split on to separate words?
-# Clue: What type is the split variable?
-# Clue: What can you do to count these?
-
-# 20. You can group data together in a tuple
-
-person = ('Bobby', 26)
-
-# print(person[0] + ' is ' + str(person[1]) + ' years old')
+# It's not very useful building a block far away from you!
+# Can you set the block close to your current position?
 
 # GO!
 
-# (name, age)
-students = [
-    ('Dave', 12),
-    ('Sophia', 13),
-    ('Sam', 12),
-    ('Kate', 11),
-    ('Daniel', 10)
-]
+# You can also experiment with different types of blocks.
+# Press CTRL+SPACE after typing 'block.', or see the list here:
+# http://www.stuffaboutcode.com/p/minecraft-api-reference.html
 
-# Now write a loop to print each of the students' names and age
+# Note: some blocks have special properties, e.g.
 
-# GO!
+#mc.setBlock(0, 0, 0, block.TNT.id, 1) # 1 means active TNT
 
-# 21. Tuples can be any length. The above examples are 2-tuples.
+#for color in range(0,16):
+#    mc.setBlock(0, 0, 0, block.WOOL.id, color) # change color
+#    time.sleep(0.5)
 
-# Try making a list of students with (name, age, favourite subject and sport)
+# 18. You can keep many items in a type of variable called a list
 
-# Now loop over them printing each one out
+blocks = [block.STONE.id, block.COBBLESTONE.id, block.GRAVEL.id,
+          block.SANDSTONE.id, block.MOSS_STONE.id]
 
-# Now pick a number (in the students' age range)
-# Make the loop only print the students older than that number
+#for block in blocks:
+#    print (block)  # what do you expect to see?
 
 # GO!
 
-# 22. Another useful data structure is a dictionary
+# Let's build a wall using layers of these blocks.
 
-# Dictionaries contain key-value pairs like an address book maps name
-# to number
-
-addresses = {
-    'Lauren': '0161 5673 890',
-    'Amy': '0115 8901 165',
-    'Daniel': '0114 2290 542',
-    'Emergency': '999'
-}
-
-# You access dictionary elements by looking them up with the key:
-
-# print(addresses['Amy'])
-
-# You can check if a key or value exists in a given dictionary:
-
-# print('David' in addresses)  # [False]
-# print('Daniel' in addresses)  # [True]
-# print('999' in addresses)  # [False]
-# print('999' in addresses.values())  # [True]
-# print(999 in addresses.values())  # [False]
+#y = # where do you want to start?
+#z = # fix z to somewhere close to you
+#for block in blocks:
+#    for x in range (start, end):  # replace start and end
+#        mc.setBlock(x, y, z, block)  # change y as you go higher
 
 # GO!
 
-# Note that 999 was entered in to the dictionary as a string, not an integer
+### Congratulations! Your done! ###
 
-# Think: what would happen if phone numbers were stored as integers?
+# Extras: some more commands for lists: in, append, extend, +, set
 
-# Try changing Amy's phone number to a new number
-
-# addresses['Amy'] = '0115 236 359'
-# print(addresses['Amy'])
-
-# GO!
-
-# Delete Daniel from the dictinary
-
-# print('Daniel' in addresses)  # [True]
-# del addresses['Daniel']
-# print('Daniel' in addresses)  # [False]
-
-# GO!
-
-# You can also loop over a dictionary and access its contents:
-
-'''
-for name in addresses:
-    print(name, addresses[name])
-'''
-
-# GO!
-
-# 23. A final challenge using the skills you've learned:
-# What is the sum of all the digits in all the numbers from 1 to 1000?
-
-# GO!
-
-# Clue: range(10) => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-# Clue: str(87) => '87'
-# Clue: int('9') => 9
