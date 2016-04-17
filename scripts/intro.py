@@ -3,6 +3,7 @@
 import time
 import mcpi.minecraft as minecraft
 import mcpi.block as block
+import random
 mc = minecraft.Minecraft.create()
 
 # The lines that start with a hash (#) are comments
@@ -291,6 +292,7 @@ def whereAmI():
 # GO!
 
 # Challenge: Can you make a wall of changing colors?
+# Advanced: Try random colors using random.randint(0, 15)
 
 # GO!
 
