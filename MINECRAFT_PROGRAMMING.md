@@ -6,62 +6,64 @@ Resources
 * Introduction to the Minecraft Python API: http://www.stuffaboutcode.com/2013/04/minecraft-pi-edition-api-tutorial.html
 * API reference: http://www.stuffaboutcode.com/p/minecraft-api-reference.html
 
-Introduction to Python
-======================
 
-Hello World
------------
-* Startup Minecraft PI, create new world.
-* Startup Python IDLE (2), create new file.
-Enter the following code and run using F5
+## Anarkali
+
+Anarkali (Pomegranate Blossom) lived in 17th Century India. She feel in love with the Prince and the King built a wall around her to keep her and the Prince apart.
+
+*Objective:* Build four walls around your player when she steps onto the trap (and eventually help her escape).
+
+![Anarkali](screenshots/anarkali.png)
+
+Before you start, you might want to sketch it out with pencil and paper. What range of coordinates will your walls cover?
+
+File -> New -> Save: anarkali.py
 
 ```python
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-mc.postToChat("hello minecraft !")
-```
-
-![hello world](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hello_world.png)
-
-Coordinates
------------
-*Objective:* display coordinates as the play is moving around the screen
-```python
-import mcpi.minecraft as minecraft
-mc = minecraft.Minecraft.create()
-
-pos = mc.player.getTilePos()
-print(pos.x)
-print(pos.y)
-print(pos.y)
-```
-
-* Notice that this prints only one time. 
-* Move around and notice how your coordinates change.
-
-![coordinates](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/coordinates.png)
-
-* Explain the print function
-
-Coordinates in a loop
----------------------
-*Objective:* show continuously updating coordinates
-```python
-import mcpi.minecraft as minecraft
 import time
+import mcpi.minecraft as minecraft
+import mcpi.block as block
 mc = minecraft.Minecraft.create()
+
+def buildWalls(x, y, z):
+    brick = block.BRICK_BLOCK.id
+    mc.setBlock(x-1, y, z-1, brick)
+    mc.setBlock(x, y, z-1, brick)
+    mc.setBlock(x+1, y, z-1, brick)
+    # Build the other 3 walls
 
 while True:
-    time.sleep(1)
-    pos = mc.player.getTilePos()
-    print("x: " + str(pos.x) + " y: " + str(pos.y) + " z: " + str(pos.z))
+    time.sleep(1)  # check every second
+    x, y, z = mc.player.getTilePos()
+    if : # player on trap position
+        buildWalls(x, y, z) # how many times do you need to build up (increase y)?
+        break  # end whlile loop (so we don't keep rebuilding the walls)
 ```
 
-* Have the player move around, and look at how coordinates are changing
-* Explain the while True loop
-* Explain sleep
-* Explain the X/Y/Z coordinate system. **Note that in videogames including minecraft, Z is depth**
-* Explain what strings and numbers are, and why one must convert numbers to string using +
+Make sure your walls are high enough to Anarkali can't jump out!
+
+:bulb: There are faster ways to build structures. Rather than looping and setting a single block at a time, we can set a range of blocks together:
+
+```python
+# build a 3x3 cube (using start and end coordinates)
+mc.setBlocks(x-1, y-1, z-1, x+1, y+1, z+1, block.BRICK_BLOCK.id) # where should y start and end?
+```
+
+But we don't need a solid cube. Set AIR blocks to hollow the inside.
+
+```python
+mc.setBlocks(x, y, z, x, y+1, z, block.BRICK_BLOCK.id) # how high does y need to go?
+```
+
+You can also build a higher or thicker structure (to prevent escape). 
+
+The King's heart softens and he allows the Prince to rescue Anarkali. The Prince sets a special timer that catapults Anarkali out of the walls and lands outside.
+You can set player position to help Anarkali escape. Use 'time' to wait (3 seconds) before the escape.
+
+```python
+mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch her fall to earth
+```
+
 
 The fence, if conditions
 ------------------------
