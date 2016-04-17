@@ -262,25 +262,54 @@ def whereAmI():
 
 # GO!
 
-# You can also experiment with different types of blocks.
+# 18. Loops + Block = Awesome!
+
+# Let's build a wall (or tower)
+
+#for x in range (start, end):  # replace start and end
+#    mc.setBlock(x, y, z, block.BRICK_BLOCK.id)  # fix a value for y and z
+
+# GO!
+
+# Now fix x and loop y to make a tower!
+
+# GO!
+
+# 19. Let's experiment with different types of blocks.
+
 # Press CTRL+SPACE after typing 'block.', or see the list here:
 # http://www.stuffaboutcode.com/p/minecraft-api-reference.html
 
 # Note: some blocks have special properties, e.g.
 
-#mc.setBlock(0, 0, 0, block.TNT.id, 1) # 1 means active TNT
+#mc.setBlock(0, 0, 0, block.TNT.id, 1) # '1' means active TNT. Hit it!
 
 #for color in range(0,16):
 #    mc.setBlock(0, 0, 0, block.WOOL.id, color) # change color
 #    time.sleep(0.5)
 
-# 18. You can keep many items in a type of variable called a list
+# GO!
+
+# Challenge: Can you make a wall of changing colors?
+
+# GO!
+
+# 20. You can keep many items in a type of variable called a list
 
 blocks = [block.STONE.id, block.COBBLESTONE.id, block.GRAVEL.id,
           block.SANDSTONE.id, block.MOSS_STONE.id]
 
 #for block in blocks:
-#    print (block)  # what do you expect to see?
+#    print block  # what do you expect to see?
+
+# GO!
+
+# A wall with each kind of block:
+
+#x = # where do you want to start?
+#for block in blocks:
+#    mc.setBlock(x, 10, 10, block)  # what do you expect to see?
+#    x = x + 1
 
 # GO!
 
@@ -294,7 +323,5 @@ blocks = [block.STONE.id, block.COBBLESTONE.id, block.GRAVEL.id,
 
 # GO!
 
-### Congratulations! Your done! ###
-
-# Extras: some more commands for lists: in, append, extend, +, set
+### Congratulations! Your done! On to more programming! ###
 
