@@ -97,10 +97,10 @@
 
   
 ### Minecraft Programming (60 - 70 mins: split accross lunch)
-- [Instructions](MINECRAFT_INTRO.md)
+- [Instructions](MINECRAFT_PROGRAMMING.md)
 - Tower
 - Bulldozer
-- Cube, Hollow Cube, House (+carpets)
+- Cube, Hollow Cube, House (+carpets?)
 - Rent + Eject Timer ?
 - Tunnel
 - Treasure Hunt ?
