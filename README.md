@@ -14,16 +14,8 @@
   
 ![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
 
--Battleship game (tetsing coordintae system) (10-15mins)
+Battleship game (tetsing coordintae system) (10-15mins)
 
-Setup Instructions:
-  -Each of you gets 30 blocks
-  -Create your battleships on the grid by arranging the blocks on the paper (x-z plane)
-    *You must have atleast 2 ships of 5 blocks each, 2 ships of 4 blocks each, 2 ships of 3 blocks each and rest can be of any length 
-    *You only get 3 minutes (timer!) to layout your ships!
-    Try not to show the layout of your battleships to others!
-
-Battle Instructions:
 
 Instructions: 
   - B (Block) *x,y,z*
