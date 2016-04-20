@@ -6,16 +6,26 @@
 ### General Introductions (15 mins: 10am - 10:15am)
 
 ### Wooden Block Game (30 mins: 10:15 - 10:45am)
-- Minecraft coordinate system:
+- Minecraft coordinate system: (10mins)
   - x-axis: East (positive), West (negative)
   - z-axis: South (positive), North (negative)
   - y-axis: High (positive), Low (negative)
   - Right-handed coordinates: thumb = x, index = y, middle = z
   
 ![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
--Test
 
-- Instructions: 
+-Battleship game (tetsing coordintae system) (10-15mins)
+
+Setup Instructions:
+  -Each of you gets 30 blocks
+  -Create your battleships on the grid by arranging the blocks on the paper (x-z plane)
+    *You must have atleast 2 ships of 5 blocks each, 2 ships of 4 blocks each, 2 ships of 3 blocks each and rest can be of any length 
+    *You only get 3 minutes (timer!) to layout your ships!
+    Try not to show the layout of your battleships to others!
+
+Battle Instructions:
+
+Instructions: 
   - B (Block) *x,y,z*
   - L (Loop) *i* = start,end
   - F (Function)
