@@ -6,7 +6,7 @@
 ### General Introductions (15 mins: 10am - 10:15am)
 
 ### Wooden Block Game (30 mins: 10:15 - 10:45am)
-- Minecraft coordinate system: (10mins)
+- Minecraft coordinate system:
   - x-axis: East (positive), West (negative)
   - z-axis: South (positive), North (negative)
   - y-axis: High (positive), Low (negative)
@@ -19,6 +19,7 @@
 - Building Instructions: 
   - B (Block) *x, y, z*
   - L (Loop) *start - end* 
+
 - :trophy: Human Programmer Computer Challenges:
   - 4x3 wall
   - 3x3 cube
