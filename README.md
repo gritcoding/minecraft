@@ -14,15 +14,16 @@
   
 ![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
 
+- Battle Ships!
 
-Instructions: 
-  - B (Block) *x,y,z*
-  - L (Loop) *i* = start,end
-  - F (Function)
-- :trophy: Task:
-  - Write instructions to build a structure.
-  - Send your instructions (and parent) to another builder.
-  - :gift: Win a prize if your structure is built successfully!
+- Building Instructions: 
+  - B (Block) *x, y, z*
+  - L (Loop) *start - end* 
+- :trophy: Human Programmer Computer Challenges:
+  - 4x3 wall
+  - 3x3 cube
+  - 8x pyramid
+  - fort
 
 ### Setup Raspberry Pi (15 mins: 10:45am - 11am)
 - Pi board
