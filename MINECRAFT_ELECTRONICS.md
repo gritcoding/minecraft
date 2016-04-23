@@ -59,6 +59,20 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 - :bulb: Modify your circuit and program to light 3 LEDS in a row.
 - :bulb: *Modify rent program to flash LEDs 3 times before before ejecting player.*
 
+## The Intruder Alarm
+
+Using the circuit you've created above, we will create an *Intruder Alarm*. It will tell us whether someone is inside our house, or our fence.
+
+- Build a rectangular fence like on the screenshot below, or use a house that you've created previously.
+- Previously, we're written some code to react based on your position compared to a wall. 
+- The code will be similar, will need to figure out whether your current position is:
+  - below the northern wall
+  - above the southern wall
+  - right of the leftmost wall
+  - left of the rightmost wall
+
+![LED Fence](screenshots/led_fence.png)
+
 ## Programmable Button
 
 - Add a button to the circuit: the button has four pins and fits nicely accross the midway point of the breadboard.
@@ -93,10 +107,9 @@ finally:
     GPIO.cleanup()  # reset GPIO and disable circuitry
 ```
 
-- :bulb: *Modify bulldozer program to use the button to clear blocks.*
-- :bulb: Flash 3 LEDs (or single LED 3 times) before detonating.
+## The Bulldozer Countdown
+
+Using the circuit above, we will create a bulldozer countdown. After pressing the button, there will be a 3-second countdown using the 3 LEDs. Then the bulldozer code will be executed to clear space around you.
 
 
-
-
-
+![LED Fence](screenshots/led_countdown_bulldozer.png)
