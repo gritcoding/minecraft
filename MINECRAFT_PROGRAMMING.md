@@ -1,21 +1,91 @@
 # Minecraft Programming
 
-Resources
-=========
+## Resources
 
 * Introduction to the Minecraft Python API: http://www.stuffaboutcode.com/2013/04/minecraft-pi-edition-api-tutorial.html
 * API reference: http://www.stuffaboutcode.com/p/minecraft-api-reference.html
 
+## Optional: The Fence
+
+*Objective:* Use if conditions to detect on what side of a fence one is. Reinforcement of coordinates from Intro.
+
+File -> New -> Save: simple_fence.py
+
+* Go to a flat area.
+* Build a small fence (as shown on the screenshot) along the *x* axis, that is *z* should not change along the wall.
+* Step on the fence, and walk along it, to determine its orientation. *y* will not change.
+* Once you know what coordinate you built it along, you're ready to write the code.
+
+```python
+import mcpi.minecraft as minecraft
+import time
+mc = minecraft.Minecraft.create()
+
+while True:
+    time.sleep(1)
+    pos = mc.player.getTilePos()
+    if pos.z < z:    # what's the fence z coordinate?
+        print("North of the fence.")
+    elif pos.z > z:  # what's the fence z coordinate?
+        print("South of the fence.")
+    else:
+        print("On the fence.")
+```
+
+:bulb: Do you want to print to the Shell or to Minecraft chat?
+
+![fence](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/fence.png)
+
+
+## Optional: The Cross
+
+*Objective:* Use embedded if conditions and creative string concatenation
+
+* Enhance your fence to look like a cross, like in the screenshot
+* Figure out where the midpoint is, that is the *x* and *z* coordinates.
+* You're ready to write the code.
+
+File -> New -> Save: cross.py
+
+```python
+import mcpi.minecraft as minecraft
+import time
+mc = minecraft.Minecraft.create()
+
+while True:
+    time.sleep(1)
+    pos = mc.player.getTilePos()
+    if pos.z operator z:      # use the required operator
+        north_south = "North"
+        if pos.x operator x:  # use the required operator
+            print(north_south + " West")
+        else:
+            print(north_south + " East")
+    elif pos.z operator z:    # use the required operator
+        north_south = "South"
+        if pos.x operator x:  # use the required operator
+            print(north_south + " West")
+        else:
+            print(north_south + " East")
+    else:
+        print()  # where am I now?
+```
+
+* Explain string concatenation again.
+* Explain greater or equal versus greater.
+
+![cross](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/cross.png)
+
 
 ## Anarkali
 
-Anarkali (Pomegranate Blossom) lived in 17th Century India. She feel in love with the Prince and the King built a wall around her to keep her and the Prince apart.
+Anarkali (Pomegranate Blossom) lived in 17th Century India. She fell in love with the Prince and the King built a wall around her to keep her and the Prince apart.
 
 *Objective:* Build four walls around your player when she steps onto the trap (and eventually help her escape).
 
 ![Anarkali](screenshots/anarkali.png)
 
-Before you start, you might want to sketch it out with pencil and paper. What range of coordinates will your walls cover?
+:bulb: Before you start, you might want to sketch it out with pencil and paper. What range of coordinates will your walls cover?
 
 File -> New -> Save: anarkali.py
 
@@ -39,6 +109,8 @@ while True:
         buildWalls(x, y, z) # how many times do you need to build up (increase y)?
         break  # end whlile loop (so we don't keep rebuilding the walls)
 ```
+
+:bulb: While you experiment, you may need to keep changing your trap position to build a new structure in a different place.
 
 Make sure your walls are high enough to Anarkali can't jump out!
 
@@ -64,96 +136,12 @@ You can set player position to help Anarkali escape. Use 'time' to wait (3 secon
 mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch her fall to earth
 ```
 
+:trophy: Challenge: What if Anarkali was born in Eygpt not India? Would the king build a tower, or... a Pyramid!
 
-The fence, if conditions
-------------------------
-*Objective:* introduce if conditions by detecting on what side of a fence one is
 
-* Go to a flat area
-* Build a small fence as shown on the screenshot
-* Step on the fence, and walk along it, to determine its orientation. It will be either *x* or *z*.
-* Once you know what coordinate you built it along, you're ready to write the code
-```python
-import mcpi.minecraft as minecraft
-import time
-mc = minecraft.Minecraft.create()
+## The Bulldozer
 
-while True:
-    time.sleep(1)
-    pos = mc.player.getTilePos()
-    if pos.x > -119:
-        print("north of the fence")
-    elif pos.x < -119:
-        print("south of the fence")
-    else:
-        print("on the fence")
-```
-
-![fence](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/fence.png)
-
-The cross, two if conditions
-----------------------------
-*Objective:* introduce embedded if conditions and creative string concatenation
-
-* Enhance your fence to look like a cross, like in the screenshot
-* Figure out where the midpoint is. If previously you built around the *z* coordinate, then this time your other coordinate is *x* and vice versa.
-* You're ready to write the code.
-
-```python
-import mcpi.minecraft as minecraft
-import time
-mc = minecraft.Minecraft.create()
-
-while True:
-    time.sleep(1)
-    pos = mc.player.getTilePos()
-    if pos.x > -119:
-        north_south = "north"
-        if pos.z > 43:
-            print(north_south + "/west")
-        else:
-            print(north_south + "/east")
-    elif pos.x < -119:
-        north_south = "south"
-        if pos.z > 43:
-            print(north_south + "/west")
-        else:
-            print(north_south + "/east")
-```
-
-* Explain string concatenation again
-* Explain greater or equal versus greater
-
-![cross](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/cross.png)
-
-The tower
----------
-*Objective:* introduce programmatic placement of blocks
-
-You can stand anywhere for this. After running, you should see a huge tower of stone blocks either in front of you or behind you.
-
-```python
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-import time
-mc = minecraft.Minecraft.create()
-
-pos = mc.player.getTilePos()
-for a in range(50):
-    mc.setBlock(pos.x+3, pos.y+a, pos.z, block.STONE.id)
-```
-
-![tower](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/tower.png)
-
-* Explain the *range(50)*.
-* Explain the arguments we're passing to setBlock, and the coordinates.
-* Ask the student which coordinate should be increasing.
-* Extra credit
- * Build a fence instead of a tower
-
-The bulldozer
--------------
-*Objective:* work with more embedded loops and relative coordinates.
+*Objective:* Work with more embedded loops and relative coordinates.
 
 * This script lets you clear a large area and leave it suitable for building.
 * In minecraft, an empty space is a block of type *AIR*
@@ -161,7 +149,6 @@ The bulldozer
 ```python
 import mcpi.minecraft as minecraft
 import mcpi.block as block
-import time
 mc = minecraft.Minecraft.create()
 
 player_pos = mc.player.getTilePos()
