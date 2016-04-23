@@ -20,6 +20,7 @@
   - fort
 
 ### Setup Raspberry Pi (15 mins: 11:00am - 11:15am)
+- Video: What is a Raspberry?
 - Pi board
 - SD Card (pre-setup)
 - HDMI (display) cable
@@ -79,6 +80,7 @@
 - Why Python?
   - [A great first programming language](http://readwrite.com/2014/07/08/what-makes-python-easy-to-learn/)
   - [Python RefCard](https://dzone.com/refcardz/core-python)
+- Video: Pair Programming (from code.org)
 - Getting started:
   - Menu -> Programming -> IDLE 2
   - Shell: run commands here for instruction and testing
