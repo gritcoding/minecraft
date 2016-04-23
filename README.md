@@ -6,13 +6,6 @@
 ### General Introductions (15 mins: 10am - 10:15am)
 
 ### Wooden Block Game (30 mins: 10:15 - 10:45am)
-- Minecraft coordinate system:
-  - x-axis: East (positive), West (negative)
-  - z-axis: South (positive), North (negative)
-  - y-axis: High (positive), Low (negative)
-  - Right-handed coordinates: thumb = x, index = y, middle = z
-  
-![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
 
 - Battle Ships!
 
@@ -61,10 +54,21 @@
     Esc	| Pause / Game menu
     Tab	| Release mouse cursor
 
+![news](http://www.chinapage.com/map/ancient/mapdirection.jpg)
+
+- Minecraft coordinate system:
+  - x-axis: East (positive), West (negative)
+  - z-axis: South (positive), North (negative)
+  - y-axis: High (positive), Low (negative)
+  - Right-handed coordinates: thumb = x, index = y, middle = z
+  
+![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
+
   - :trophy: Challenges for parents
     - Move to position 0,0,0
     - Learn to fly and swim
     - How big (x, z) is your world?
+    - Can you find the South East corner of your world?
     - Build a house with stone walls, door, windows and wooden roof (bonus: fence around the house)
     - What are the dimensions (x, y, z) of your house?
 
