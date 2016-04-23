@@ -80,7 +80,7 @@
   - [Python RefCard](https://dzone.com/refcardz/core-python)
 - Getting started:
   - Menu -> Programming -> IDLE 2
-  - Shell
+  - Shell: run commands here for instruction and testing
   - File -> Open -> minecraft/scripts/[intro.py](scripts/intro.py) -> IDLE editor
   - Run: F5
   - Break: CTRL+C 
