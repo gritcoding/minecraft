@@ -81,7 +81,7 @@ mc = minecraft.Minecraft.create()
 
 BUTTON = 4
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(BUTTON, GPIO.IN)   # setup for input
+GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # setup for input
 
 try:
     while GPIO.input(BUTTON):
