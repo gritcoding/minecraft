@@ -29,7 +29,7 @@ etc).
 
 - Connect an LED, a 330 Ohm resistor and two short wires to the positive + (red line) and negative - (blue line) rows as shown.
 
-**IMAGE**
+![Single LED](images/led_setup.jpg)
 
 ## A programmable circuit
 
