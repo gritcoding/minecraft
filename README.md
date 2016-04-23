@@ -5,7 +5,7 @@
 
 ### General Introductions (15 mins: 10am - 10:15am)
 
-### Wooden Block Game (30 mins: 10:15 - 10:45am)
+### Wooden Block Game (30 mins: 10:15am - 11:00am)
 
 - Battle Ships!
 
@@ -19,7 +19,7 @@
   - 8x pyramid
   - fort
 
-### Setup Raspberry Pi (15 mins: 10:45am - 11am)
+### Setup Raspberry Pi (15 mins: 11:00am - 11:15am)
 - Pi board
 - SD Card (pre-setup)
 - HDMI (display) cable
@@ -28,7 +28,7 @@
 - Mouse
 - Power
 
-### Introduction to Minecraft (20 mins: 11am - 11:20am)
+### Introduction to Minecraft (15 mins: 11:30am - 11:45am)
   - What is Minecraft?
     - [What is Minecraft all about?](http://minemum.com/what-is-minecraft)
   - What is Minecraft Pi? (features and limitations)
@@ -75,7 +75,7 @@
 
 ![House](screenshots/house.png)
 
-### Introduction to Python (40 mins: 11:20am - noon)
+### Introduction to Python (45 mins: 11:45am - 12:30pm)
 - Why Python?
   - [A great first programming language](http://readwrite.com/2014/07/08/what-makes-python-easy-to-learn/)
   - [Python RefCard](https://dzone.com/refcardz/core-python)
@@ -109,32 +109,17 @@
 ![Wall](screenshots/wall.png)
 
 
-  
-### Minecraft Programming (60 - 70 mins: split accross lunch)
+### Minecraft Programming (90 mins: 1:00pm - 2:30pm)
 - [Instructions](MINECRAFT_PROGRAMMING.md)
-- Tower
-- Bulldozer
-- Cube, Hollow Cube, House (+carpets?)
-- Rent + Eject Timer ?
-- Tunnel
-- Treasure Hunt ?
 
-### Lunch Break (30 mins)
 
-### Minecraft Quiz (30 mins - TBD)
-- Ideas:
-  - (Bingo)[http://catchmyparty.com/blog/free-printable-minecraft-bingo-game]
-  - Trivia Quiz (in teams)
-- :gift: Prizes!
+### Lunch Break (30 mins: 12:30pm - 1:00pm)
+- Minecraft Bingo
 
-### Electronics (30 - 45 mins)
+
+### Electronics (60 mins 2:45pm - 3:45pm)
 - [Instructions](MINECRAFT_ELECTRONICS.md)
-- Light an LED
-  - Non-programatically
-  - Programatically and blink
-  - Bulldozer: button
-  - Rent: 3 LEDs (or 7 Segment display): eject countdown
-- try : finally : cleanup
+
 
 ### Crafty Crossing
 - TBD
