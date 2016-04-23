@@ -5,11 +5,11 @@ mc = minecraft.Minecraft.create()
 while True:
     time.sleep(1)
     pos = mc.player.getTilePos()
-    if pos.x > -119:
-        print("north of the fence")
-    elif pos.x < -119:
-        print("south of the fence")
+    if pos.z > -119:
+        print("North of the fence")
+    elif pos.z < -119:
+        print("South of the fence")
     else:
-        print("on the fence")
+        print("On the fence")
 
     

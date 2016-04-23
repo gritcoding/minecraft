@@ -166,7 +166,7 @@ steves_age = 15
 
 # 12. We can ask questions before printing with an if statement
 
-#south = pos.z < 0
+#south = pos.z > 0
 
 #if south:
 #    message = "You are in the South"
@@ -182,7 +182,7 @@ steves_age = 15
 # We can ask many questions using elif (else if) and use 'not'
 # to mean the opposite.
 
-#south = pos.z < 0
+#south = pos.z > 0
 #north = not south
 #west = pos.x operator 0  # fix me using less than
 #east = pos.x operator 0  # fix me using greater than (and equal to)

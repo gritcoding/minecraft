@@ -5,17 +5,17 @@ mc = minecraft.Minecraft.create()
 while True:
     time.sleep(1)
     pos = mc.player.getTilePos()
-    if pos.x > -119:
-        north_south = "north"
-        if pos.z > 43:
-            print(north_south + "/west")
+    if pos.z < -119:
+        north_south = "North"
+        if pos.x > 43:
+            print(north_south + " West")
         else:
-            print(north_south + "/east")
-    elif pos.x < -119:
-        north_south = "south"
-        if pos.z > 43:
-            print(north_south + "/west")
+            print(north_south + " East")
+    elif pos.z > -119:
+        north_south = "South"
+        if pos.x > 43:
+            print(north_south + " West")
         else:
-            print(north_south + "/east")
+            print(north_south + " East")
 
     
