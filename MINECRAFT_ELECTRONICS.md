@@ -89,7 +89,6 @@ Solution: [fence_led.py](scripts/fence_led.py)
 
 ![three_led_pushbutton](images/three_leds_pushbutton_top.jpg)
 
-- Run [led_detonator.py](scripts/led_detonator)
 
 ```python
 import RPi.GPIO as GPIO
@@ -106,7 +105,7 @@ try:
     while GPIO.input(BUTTON):
         time.sleep(0.1)
 
-    mc.postToChat('BOOM!')
+    mc.postToChat('Button pressed!')
     
 finally:
     GPIO.cleanup()  # reset GPIO and disable circuitry
