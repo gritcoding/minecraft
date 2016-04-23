@@ -54,7 +54,7 @@
     Esc	| Pause / Game menu
     Tab	| Release mouse cursor
 
-![news](http://www.chinapage.com/map/ancient/mapdirection.jpg)
+![news](https://s-media-cache-ak0.pinimg.com/736x/93/5d/3a/935d3a6502c5ecdfc5e324172eac7a69.jpg)
 
 - Minecraft coordinate system:
   - x-axis: East (positive), West (negative)
