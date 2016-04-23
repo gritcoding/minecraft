@@ -84,6 +84,7 @@
   - File -> Open -> minecraft/scripts/[intro.py](scripts/intro.py) -> IDLE editor
   - Run: F5
   - Break: CTRL+C 
+  - Auto-complete: CTRL+SPACE
   - Case-sensitive
   - Indentation (for blocks)
 - Learning Objectives:
