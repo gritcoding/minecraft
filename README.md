@@ -96,7 +96,12 @@
   - While Loops
   - Lists
 
-![House](screenshots/wall.png)
+![hello](screenshots/hello_world.png)
+
+![tower](screenshots/tower.png)
+
+![Wall](screenshots/wall.png)
+
 
   
 ### Minecraft Programming (60 - 70 mins: split accross lunch)
