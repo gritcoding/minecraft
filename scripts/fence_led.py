@@ -10,6 +10,7 @@ GPIO.setup(LED, GPIO.OUT)  # setup for output
 
 led_status = False
 
+# you will have to figure out these numbers by walking along the edges of your fence
 z_max = 11
 z_min = 6
 x_max = 61
