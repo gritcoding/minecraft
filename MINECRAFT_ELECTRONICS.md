@@ -56,8 +56,7 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 - Explain setup, output and cleanup.
 - :bulb: Make your LED flash forever: [led_flash.py](scripts/led_flash.py)
 - :bulb: Make your LED flash only 3 times: `for x in range(0,3)`
-- :bulb: Modify your circuit and program to light 3 LEDS in a row.
-- :bulb: *Modify rent program to flash LEDs 3 times before before ejecting player.*
+- :bulb: Modify your circuit and program to light 3 LEDS in a row, that is light up for countdown, and then flash all three together.
 
 ## The Intruder Alarm
 
@@ -77,6 +76,7 @@ Using the circuit you've created above, we will create an **Intruder Alarm**. It
 Solution: [fence_led.py](scripts/fence_led.py)
 
 - :bulb: Make the LED flash when the intruder is getting **close** to the house, but not yet inside the house.
+- :bulb: If you have three LEDs, successive LEDs light up as you get closer, and then all together when you enter the house.
 
 ## Programmable Button
 
@@ -123,4 +123,4 @@ Using the circuit above, we will create a bulldozer countdown. After pressing th
 Solution: [led_countdown_bulldozer.py](scripts/led_countdown_bulldozer.py)
 
 - :bulb: What if I want to dig a bigger hole by pressing the button repeatedly ?
-- :bulb: Make the player jump up in the air when the bulldozer takes effect !
+- :bulb: Make the player jump up in the air when the bulldozer takes effect !
