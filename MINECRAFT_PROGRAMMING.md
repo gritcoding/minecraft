@@ -179,161 +179,49 @@ mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch h
 :trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try a single block of WATER or LAVA (it flows!).
 
 
-Building a cube, faster
------------------------
-*Objective:* introduce a faster API for building a volume
+## Optional: Build a House
 
-* The 3 embedded loops to build a cube work fine, but they are a bit tedious to type, and they are slow as you might have seen.
-* There is a simple and faster way to build them.
+*Objective:* Build a house using the skills learned
 
-```python
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-import time
-mc = minecraft.Minecraft.create()
+- Remember the house you built earlier? Let's try building the same using programming.
 
-pos = mc.player.getTilePos()
-initial_distance = 8
-x_range = 5
-z_range = 5
-y_range = 3
-mc.setBlocks(pos.x - x_range,
-             pos.y,
-             pos.z - z_range + initial_distance,
-             pos.x + x_range,
-             pos.y + y_range,
-             pos.z + z_range + initial_distance,
-             block.IRON_ORE.id
-             )
-```
+File -> New -> Save: house.py
+
+- First build a solid cuboid. Do you want to build it where you're standing (and get trapped inside), or some distance away from you?
+- :idea: bulldoze some space for your house before your start building. 
 
 ![cube](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/build_cube.png)
 
-* If we didn't add **initial_distance**, the player would be trapped inside a cube of iron ore.
-* The cube may appear in front or behind you, or off to the sides. You may add this initial_distance to the **x** or **z** dimensions to suit your needs.
-
-Hollow cube
------------
-*Objective:* build a cube which is empty. Because solid cubes are not very useful.
-
-* The basic technique is that we build a solid Iron Ore cube first, using the technique above, and then we build a smaller one inside, with blocks of type **AIR**.
-
-```python
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-import time
-mc = minecraft.Minecraft.create()
-
-pos = mc.player.getTilePos()
-initial_distance = 8
-x_range = 5
-z_range = 5
-y_range = 3
-mc.setBlocks(pos.x - x_range,
-             pos.y,
-             pos.z - z_range + initial_distance,
-             pos.x + x_range,
-             pos.y + y_range,
-             pos.z + z_range + initial_distance,
-             block.IRON_ORE.id
-             )
-mc.setBlocks(pos.x - x_range + 1,
-             pos.y,
-             pos.z - z_range + initial_distance + 1,
-             pos.x + x_range - 1,
-             pos.y + y_range - 1,
-             pos.z + z_range + initial_distance - 1,
-             block.AIR.id
-             )
-```
+- Then clear the inside of the cuboid (your walls should be 1 block thick). That is, place an AIR cuboid inside your solid cuboid.
+- Once the cube is built, you can break up a few blocks to convince yourself that it is indeed hollow.
 
 ![hollow cube](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/hollow_cube.png)
 
-* Once the cube is built, you can break up a few blocks to convince yourself that it is indeed hollow.
-* Explain why we have the +1 / -1
-* Explain why the y dimension is special. Because we don't need to hollow out the ground floor.
-* Extra credit:
- * Build an enclosed area which is open at the top
-* For fun: 
- * go in and place some torches.
- * place a few windows using the glass block.
- * place some ladders on the outside to allow easy climbing to the roof.
- * put in some furniture, a bed, a stove, a door.
+- Understand why we have the +1 / -1 (depends which side of the house your hollowing).
+- Understand why the y dimension is special: because we don't need to hollow out the ground floor (did you?)
 
+- For fun: 
+  - Go in and place some torches.
+  - Place a few windows using the glass block.
+  - Place some ladders on the outside to allow easy climbing to the roof.
+  - Put in some furniture, a bed, a stove, a door. Perhaps trees and flowers outside.
+  - Would a pool be nice? 
+  - How about carpeting? (remember WOOL -- use colors for patterns).
 
-Building a personalized house
------------------------------
-*Objective:* introduce re-usable functions
-
-* The house construction code will be placed inside a function, taking house dimensions as a parameter.
+- :trophy: Personalize your house!
+  - Place the house construction code inside a function, taking house dimensions as parameters.
 
 ```python
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-import time
-mc = minecraft.Minecraft.create()
-
 def build_house(width, depth, height):
-    pos = mc.player.getTilePos()
-    initial_distance = 8
-    
-    x_range = width
-    z_range = depth
-    y_range = height
-    
-    mc.setBlocks(pos.x - x_range,
-                 pos.y,
-                 pos.z - z_range + initial_distance,
-                 pos.x + x_range,
-                 pos.y + y_range,
-                 pos.z + z_range + initial_distance,
-                 block.BRICK_BLOCK.id
-                 )
-    mc.setBlocks(pos.x - x_range + 1,
-                 pos.y,
-                 pos.z - z_range + initial_distance + 1,
-                 pos.x + x_range - 1,
-                 pos.y + y_range - 1,
-                 pos.z + z_range + initial_distance - 1,
-                 block.AIR.id
-                 )
-
-    # leave empty space for an entrance
-    entrance_x = pos.x + x_range
-    entrance_z = pos.z + initial_distance
-    entrance_y = 0 # always on ground floor
-    mc.setBlocks(entrance_x, entrance_y,     entrance_z,
-                 entrance_x, entrance_y + 1, entrance_z,
-                 block.AIR.id)
-
-    # put in a window on the other side
-    window_x = pos.x - x_range
-    window_z = pos.z + initial_distance
-    window_y = 1 # one block above ground floor
-    window_height = 1
-    window_width = 2
-    mc.setBlocks(window_x,  window_y,                 window_z,
-                 window_x,  window_y + window_height, window_z + window_width,
-                 block.GLASS.id)
-    
-build_house(4, 4, 3)
+    # super awesome building code goes here
 ```
 
 ![house function](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/house_function.png)
 
-* Explain functions, and parameters
-* For fun:
- * Build a staircase inside the house, leading up to the roof.
- * Add torches for extra lighting
-* Extra credit:
- * Add multiple windows.
- * Add a *carpet* on the floor.
- * Build a swimming pool next to your house.
- * *Complicated*: build a staircase
 
-The Tunnel
-----------
-*Objective:* introduce loops with interval and modulo
+# Optiona: The Tunnel
+
+*Objective:* Introduce loops with interval and modulo
 
 * The following scripts lets you dig a tunnel, lit up with torches every 3 blocks
 * This is complicated enough that you may need to explain on a piece of paper, particularly the direction concept.
