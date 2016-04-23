@@ -74,7 +74,7 @@ Using the circuit you've created above, we will create an **Intruder Alarm**. It
 
 ![LED Fence](screenshots/led_fence.png)
 
-Solution: [fence_led.py](scripts/fence_led.py
+Solution: [fence_led.py](scripts/fence_led.py)
 
 ## Programmable Button
 
@@ -118,7 +118,7 @@ Using the circuit above, we will create a bulldozer countdown. After pressing th
 
 ![LED Fence](screenshots/led_countdown_bulldozer.png)
 
-Solution: [led_countdown_bulldozer.py](scripts/led_countdown_bulldozer.py
+Solution: [led_countdown_bulldozer.py](scripts/led_countdown_bulldozer.py)
 
 - :bulb: What if I want to dig a bigger hole by pressing the button repeatedly ?
 - :bulb: Make the player jump up in the air when the bulldozer takes effect !
