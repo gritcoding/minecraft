@@ -61,7 +61,7 @@ GPIO.cleanup()  # reset GPIO and disble circuitry
 
 ## The Intruder Alarm
 
-Using the circuit you've created above, we will create an *Intruder Alarm*. It will tell us whether someone is inside our house, or our fence.
+Using the circuit you've created above, we will create an **Intruder Alarm**. It will tell us whether someone is inside our house, or our fence.
 
 - Build a rectangular fence like on the screenshot below, or use a house that you've created previously.
 - Previously, we're written some code to react based on your position compared to a wall. 
@@ -70,8 +70,11 @@ Using the circuit you've created above, we will create an *Intruder Alarm*. It w
   - above the southern wall
   - right of the leftmost wall
   - left of the rightmost wall
+- Once the code is written, test it out by jumping in and out of your fence. The LED should light up when inside, and turn off when outside.
 
 ![LED Fence](screenshots/led_fence.png)
+
+Solution: [fence_led.py](scripts/fence_led.py
 
 ## Programmable Button
 
@@ -111,5 +114,11 @@ finally:
 
 Using the circuit above, we will create a bulldozer countdown. After pressing the button, there will be a 3-second countdown using the 3 LEDs. Then the bulldozer code will be executed to clear space around you.
 
+- Think about how to turn on all 3 LEDs together. You may call 3 separate **GPIO.output(LED, True)** instructions, but there may be a better way !
 
 ![LED Fence](screenshots/led_countdown_bulldozer.png)
+
+Solution: [led_countdown_bulldozer.py](scripts/led_countdown_bulldozer.py
+
+- :bulb: What if I want to dig a bigger hole by pressing the button repeatedly ?
+- :bulb: Make the player jump up in the air when the bulldozer takes effect !
