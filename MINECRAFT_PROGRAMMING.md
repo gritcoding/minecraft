@@ -200,16 +200,17 @@ File -> New -> Save: house.py
 - Understand why we have the +1 / -1 (depends which side of the house your hollowing).
 - Understand why the y dimension is special: because we don't need to hollow out the ground floor (did you?)
 
-- For fun: 
+- :laughing: For fun: 
   - Go in and place some torches.
   - Place a few windows using the glass block.
   - Place some ladders on the outside to allow easy climbing to the roof.
   - Put in some furniture, a bed, a stove, a door. Perhaps trees and flowers outside.
   - Would a pool be nice? 
   - How about carpeting? (remember WOOL -- use colors for patterns).
+  - Perhaps it's not a house, but a castle! Build a tower on each corner. And a moat around.
 
 - :trophy: Personalize your house!
-  - Place the house construction code inside a function, taking house dimensions as parameters.
+  - Place the house construction code inside a function, taking house dimensions as parameters. Because your're not just building your house, but a whole town!
 
 ```python
 def build_house(width, depth, height):
@@ -219,12 +220,18 @@ def build_house(width, depth, height):
 ![house function](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/house_function.png)
 
 
-# Optiona: The Tunnel
+# Optional: The Tunnel
 
 *Objective:* Introduce loops with interval and modulo
 
-* The following scripts lets you dig a tunnel, lit up with torches every 3 blocks
-* This is complicated enough that you may need to explain on a piece of paper, particularly the direction concept.
+- We will dig a tunnel through a mountain and light it up with torches every 3 blocks.
+- This is complicated enough that you will want to sketch it out on a piece of paper first, particular the concept of direction (which direction does your tunnel go?).
+- Can't find a mountain? You know how to build a BIG solid block of rock! We can tunnel through that.
+
+File -> New -> Save: tunnel.py
+
+- Write a function that takes the length and direction of your tunnel, and builds a tunnel from where you are standing.
+- Use 'raw_input' to get input from the keyboard.
 
 ```python
 import mcpi.minecraft as minecraft
@@ -242,62 +249,64 @@ def build_tunnel(length, direction):
 
     # setup defaults, which will be changed as needed
     end_x = start_x
-    end_y = start_y + 1 # tunnel is 2 units in height
+    end_y = start_y + height # how high should your tunnel be? 2 blocks?
     end_z = start_z
-    
-    if direction == 1:
-        end_x = start_x + length
-    elif direction == 2:
-        end_x = start_x - length
-    elif direction == 3:
-        end_z = start_z + length
-    elif direction == 4:
-        end_z = start_z - length
 
+    if direction == 1:
+        end_x = # depends on length and direction
+    elif direction == 2:
+        end_x = # depends on length and direction
+    elif direction == 3:
+        end_z = # depends on length and direction
+    elif direction == 4:
+        end_z = # depends on length and direction
+
+    # dig the tunnel
     mc.setBlocks(start_x, start_y, start_z,
                  end_x,   end_y,   end_z,
                  block.AIR.id)
 
-    # now place some torches using a loop
-    interval = 3 # place a torch every 3 units
-    i = 0
-
-    torch_x = start_x
-    torch_y = 1 # this always stays the same, one block above ground
-    torch_z = start_z
-    while i < length:
-        if i % interval == 0:
-            # place torch here. the exact location depends on the direction
-            
-            if direction == 1:
-                torch_x = 1 * i + start_x
-            if direction == 2:
-                torch_x = -1 * i + start_x
-            if direction == 3:
-                torch_z = 1 * i + start_z
-            if direction == 4:
-                torch_z = -1 * i + start_z
-
-            print("placing torch: ", torch_x, torch_y, torch_z)
-            mc.setBlock(torch_x, torch_y, torch_z, block.TORCH.id, 1)
-                        
-
-            
-        i += 1
-    
-
-    
-
 length = int(raw_input("length of tunnel?"))
 direction = int(raw_input("direction?"))
+
 build_tunnel(length, direction)
 ```
 
 ![tunnel](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/tunnel.png)
 
-* Explain the direction concept. We need to know which direction to build in, and that will determine which direction to increase by the length of the tunnel.
-* Explain the while loop to build the torches.
-* Explain modulo as a way of having steps. In this case, we want torches every 3 blocks.
-* Extra credit:
- * Build a tunnel which digs a few blocks under the ground, and places a staircase for easy access on both ends
+- Now let's add some torchers at regular intervals
 
+```python
+# how does range work?
+for i in range(0,20):
+    print i
+
+step = 3
+for i in range(0, 20, step)
+    print i
+```
+
+- Torches will be need to be placed in the same direction as the tunnel
+
+```python
+    torch_x = start_x
+    torch_y = # above ground, depends on how high the tunnel is
+    torch_z = start_z
+    
+    for i in range(0, length, 3):
+    
+        if direction == 1:
+            # change torch_x or torch_z depending on direction
+        elif direction == 2:
+            # change torch_x or torch_z depending on direction
+        elif direction == 3:
+            # change torch_x or torch_z depending on direction
+        elif direction == 4:
+            # change torch_x or torch_z depending on direction
+
+        print("placing torch: ", torch_x, torch_y, torch_z)
+        mc.setBlock(torch_x, torch_y, torch_z, block.TORCH.id, 1)
+```
+
+- :trophy: Put torches on both sides of the tunnel, using spaced intervals.
+- :trophy: Build a tunnel which digs a few blocks under the ground, and places a staircase for easy access on both ends
