@@ -5,7 +5,7 @@
 * Introduction to the Minecraft Python API: http://www.stuffaboutcode.com/2013/04/minecraft-pi-edition-api-tutorial.html
 * API reference: http://www.stuffaboutcode.com/p/minecraft-api-reference.html
 
-## Optional: The Fence
+## The Fence
 
 *Objective:* Use if conditions to detect on what side of a fence one is. Reinforcement of coordinates from Intro.
 
@@ -37,7 +37,7 @@ while True:
 ![fence](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/fence.png)
 
 
-## Optional: The Cross
+## The Cross
 
 *Objective:* Use embedded if conditions and creative string concatenation
 
@@ -179,7 +179,7 @@ mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch h
 :trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try a single block of WATER or LAVA (it flows!).
 
 
-## Optional: Build a House
+## Build a House
 
 *Objective:* Build a house using the skills learned
 
@@ -220,7 +220,7 @@ def build_house(width, depth, height):
 ![house function](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/house_function.png)
 
 
-# Optional: The Tunnel
+## The Tunnel
 
 *Objective:* Introduce loops with interval and modulo
 
