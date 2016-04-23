@@ -137,6 +137,7 @@ mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch h
 ```
 
 :trophy: Challenge: What if Anarkali was born in Eygpt not India? Would the king build a tower, or... a Pyramid!
+:trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try WATER or LAVA (it flows!).
 
 
 ## The Bulldozer
