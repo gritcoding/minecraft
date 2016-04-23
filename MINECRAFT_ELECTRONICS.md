@@ -76,6 +76,8 @@ Using the circuit you've created above, we will create an **Intruder Alarm**. It
 
 Solution: [fence_led.py](scripts/fence_led.py)
 
+- :bulb: Make the LED flash when the intruder is getting **close** to the house, but not yet inside the house.
+
 ## Programmable Button
 
 - Add a button to the circuit: the button has four pins and fits nicely accross the midway point of the breadboard.
