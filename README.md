@@ -67,6 +67,7 @@
   - :trophy: Challenges for parents
     - Move to position 0,0,0
     - Learn to fly and swim
+    - What is the (y) coordinate of sea-level?
     - How big (x, z) is your world?
     - Can you find the South East corner of your world?
     - Build a house with stone walls, door, windows and wooden roof (bonus: fence around the house)
