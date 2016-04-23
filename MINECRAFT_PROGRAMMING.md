@@ -101,16 +101,17 @@ for :  # three loops for a 20x20x20 cube
 - Where is the space relative to your position?
 - Can you clear the space with yourself in the center? Hint: coordinates go from -10 to +10 relative to you.
 - Are you digging down underground? How can you bulldoze 'above ground' (relative to where you are standing) or down but where y is greater than zero (don't go below sea-level)?
-- Write a function that takes (x, z) coordinates and bulldozes above sea-level with (x, z) at the center -- now you will have a bulldozer you can easily use in your other programs!
+- :bulb: Write a function that takes (x, z) coordinates and bulldozes above sea-level with (x, z) at the center -- now you will have a bulldozer you can easily use in your other programs (basically everytime you build something, you can bulldoze first).
 
 ```python
 def bulldoze(position_x, position_y):
     # blah blah blah
     
-dulldoze(pos.x, pos.y)
+bulldoze(pos.x, pos.y)
 ```
 
 ![bulldozer](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/bulldozer.png)
+
 
 ## Anarkali
 
@@ -149,14 +150,14 @@ while True:
 
 Make sure your walls are high enough to Anarkali can't jump out!
 
-:bulb: There are faster ways to build structures. Rather than looping and setting a single block at a time, we can set a range of blocks together:
+:bulb: Though it's fun to watch the blocks line up, there are faster ways to build structures. Rather than looping and setting a single block at a time, we can set a range of blocks together:
 
 ```python
 # build a 3x3 cube (using start and end coordinates)
 mc.setBlocks(x-1, y-1, z-1, x+1, y+1, z+1, block.BRICK_BLOCK.id) # where should y start and end?
 ```
 
-:bulb: You can use the same trick for the bulldozer!
+:bulb: You can use the same trick for the bulldozer program you wrote earlier. In fact you should be bulldozing everytime you experiment with your tower contruction!
 
 But we don't need a solid cube. Set AIR blocks to hollow the inside.
 
@@ -175,7 +176,7 @@ mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch h
 
 :trophy: Challenge: What if Anarkali was born in Eygpt not India? Would the king build a tower, or... a Pyramid!
 
-:trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try WATER or LAVA (it flows!).
+:trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try a single block of WATER or LAVA (it flows!).
 
 
 Building a cube, faster
