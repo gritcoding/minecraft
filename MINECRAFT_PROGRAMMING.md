@@ -77,6 +77,41 @@ while True:
 ![cross](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/cross.png)
 
 
+## The Bulldozer
+
+*Objective:* Work with more embedded loops and relative coordinates.
+
+* This program lets you clear a large area and leave it suitable for building.
+* In minecraft, an empty space is a block of type *AIR*
+
+File -> New -> Save: cross.py
+
+```python
+import mcpi.minecraft as minecraft
+import mcpi.block as block
+mc = minecraft.Minecraft.create()
+
+pos = mc.player.getTilePos()
+for :  # three loops for a 20x20x20 cube
+    for :
+        for :
+            mc.setBlock(pos.x + x, pos.y + y, pos.z + z, block.AIR.id)
+```
+
+- Where is the space relative to your position?
+- Can you clear the space with yourself in the center? Hint: coordinates go from -10 to +10 relative to you.
+- Are you digging down underground? How can you bulldoze 'above ground' (relative to where you are standing) or down but where y is greater than zero (don't go below sea-level)?
+- Write a function that takes (x, z) coordinates and bulldozes above sea-level with (x, z) at the center -- now you will have a bulldozer you can easily use in your other programs!
+
+```python
+def bulldoze(position_x, position_y):
+    # blah blah blah
+    
+dulldoze(pos.x, pos.y)
+```
+
+![bulldozer](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/bulldozer.png)
+
 ## Anarkali
 
 Anarkali (Pomegranate Blossom) lived in 17th Century India. She fell in love with the Prince and the King built a wall around her to keep her and the Prince apart.
@@ -121,6 +156,8 @@ Make sure your walls are high enough to Anarkali can't jump out!
 mc.setBlocks(x-1, y-1, z-1, x+1, y+1, z+1, block.BRICK_BLOCK.id) # where should y start and end?
 ```
 
+:bulb: You can use the same trick for the bulldozer!
+
 But we don't need a solid cube. Set AIR blocks to hollow the inside.
 
 ```python
@@ -137,37 +174,8 @@ mc.player.setPos(x+10, y+10, z+10)  # move player to a new position, and watch h
 ```
 
 :trophy: Challenge: What if Anarkali was born in Eygpt not India? Would the king build a tower, or... a Pyramid!
+
 :trophy: Challenge: What else would you put around the tower / pyramid to prevent escape? A moat of water. Lava perhaps? Try WATER or LAVA (it flows!).
-
-
-## The Bulldozer
-
-*Objective:* Work with more embedded loops and relative coordinates.
-
-* This script lets you clear a large area and leave it suitable for building.
-* In minecraft, an empty space is a block of type *AIR*
-
-```python
-import mcpi.minecraft as minecraft
-import mcpi.block as block
-mc = minecraft.Minecraft.create()
-
-player_pos = mc.player.getTilePos()
-for x in range(-10,10):
-    for z in range(-10,10):
-        for y in range(0,10):
-            mc.setBlock(player_pos.x+x, player_pos.y+y, player_pos.z+z, block.AIR.id)
-```
-
-![bulldozer](https://raw.githubusercontent.com/gritcoding/minecraft/master/screenshots/bulldozer.png)
-
-After running this script, you should find that a large area was cleared as in the screenshot.
-
-* Explain relative positions to the player
-* Explain the *range(start,stop)* function, possibly using IDLE
-* Explain why the *y* loop starts at zero. It's because in minecraft, sea level is zero, and we want to clear an area, not dig down.
-* Extra credit
- * Dig underground
 
 
 Building a cube, faster
