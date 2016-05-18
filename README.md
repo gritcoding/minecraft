@@ -7,11 +7,9 @@
 
 ### Wooden Block Game (30 mins: 10:15am - 11:00am)
 
-- Battle Ships!
-
 - Building Instructions: 
   - B (Block) *x, y, z*
-  - L (Loop) *start - end* 
+  - B (Block) *(start-end) (start-end) (start-end)* 
 
 - :trophy: Human Programmer Computer Challenges:
   - 4x3 wall
@@ -65,7 +63,7 @@
   
 ![Coordinate Systems](http://viz.aset.psu.edu/gho/sem_notes/3d_fundamentals/gifs/left_right_hand.gif)
 
-  - :trophy: Challenges for parents
+  - :trophy: Challenges
     - Move to position 0,0,0
     - Learn to fly and swim
     - What is the (y) coordinate of sea-level?
@@ -122,6 +120,3 @@
 ### Electronics (60 mins 2:45pm - 3:45pm)
 - [Instructions](MINECRAFT_ELECTRONICS.md)
 
-
-### Crafty Crossing
-- TBD
