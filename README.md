@@ -89,7 +89,7 @@
 ### Minecraft Programming (90 mins: 12:45pm - 2:15pm)
 - [Instructions](MINECRAFT_PROGRAMMING.md)
 - [Jupyter Notebook](notebook/)
-- 
+
 ### Electronics (90 mins 2:15pm - 3:45pm)
 - [Instructions](MINECRAFT_ELECTRONICS.md)
 - [Jupyter Notebook](notebook/)
