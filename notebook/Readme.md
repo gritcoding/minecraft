@@ -1,8 +1,11 @@
-# Installation
-Run `pip3 install jupyter` to install jupyter notebook (or `pip install jupyter` if you only have python 2, note that you need to have 2.7 or above).
+Lesson plans have been converted to Jupyter Notebooks.
 
 # Starting up jupyter notebook
-run `jupyter notebook` under `notebook/`.  This should bring up a browser that point to this URL:
-`http://localhost:8888/tree#`
+- In a terminal window run `jupyter notebook`
+- This should bring up a browser that points to this URL: `http://localhost:8888/tree#`
+- Go to `minecraft/notebook/` and click on `Introduction.ipynb` to start coding!
 
-Click on `Introduction.ipynb` to start coding!
+# Installation
+- Should not be required if already using a pre-build sd card.
+- `sudo apt-get install python-dev`
+- `sudo pip install jupyter` to install jupyter notebook
