@@ -5,7 +5,7 @@
 
 ### General Introductions (15 mins: 10am - 10:15am)
 
-### Wooden Block Game (30 mins: 10:15am - 11:00am)
+### Wooden Block Game (15 mins: 10:15am - 10:30am)
 
 - Building Instructions: 
   - B (Block) *x, y, z*
@@ -17,7 +17,7 @@
   - 8x pyramid
   - fort
 
-### Setup Raspberry Pi (15 mins: 11:00am - 11:15am)
+### Setup Raspberry Pi (15 mins: 10:30am - 10:45am)
 - Video: What is a Raspberry?
 - Pi board
 - SD Card (pre-setup)
@@ -27,7 +27,7 @@
 - Mouse
 - Power
 
-### Introduction to Minecraft (15 mins: 11:30am - 11:45am)
+### Introduction to Minecraft (30 mins: 10:45am - 11:15am)
   - What is Minecraft?
     - [What is Minecraft all about?](http://minemum.com/what-is-minecraft)
   - What is Minecraft Pi? (features and limitations)
@@ -74,49 +74,22 @@
 
 ![House](screenshots/house.png)
 
-### Introduction to Python (45 mins: 11:45am - 12:30pm)
+### Introduction to Python (45 mins: 11:15am - 12:00pm)
 - Why Python?
   - [A great first programming language](http://readwrite.com/2014/07/08/what-makes-python-easy-to-learn/)
   - [Python RefCard](https://dzone.com/refcardz/core-python)
 - Video: Pair Programming (from code.org)
-- Getting started:
-  - Menu -> Programming -> IDLE 2
-  - Shell: run commands here for instruction and testing
-  - File -> Open -> minecraft/scripts/[intro.py](scripts/intro.py) -> IDLE editor
-  - Run: F5
-  - Break: CTRL+C 
-  - Auto-complete: CTRL+SPACE
-  - Case-sensitive
-  - Indentation (for blocks)
-- Learning Objectives:
-  - Comments
-  - Printing
-  - Basic maths operators (add, subtract, multiply)
-  - Basic variable types (strings, integers)
-  - Concatenating strings
-  - Casting an integer to a string
-  - Booleans (True / False)
-  - Inequalities (Greater Than / Less Than)
-  - If/Else statements
-  - For Loops
-  - While Loops
-  - Lists
+- [Jupyter Notebook](notebook/)
 
 ![hello](screenshots/hello_world.png)
 
-![tower](screenshots/tower.png)
-
-![Wall](screenshots/wall.png)
-
-
-### Minecraft Programming (90 mins: 1:00pm - 2:30pm)
-- [Instructions](MINECRAFT_PROGRAMMING.md)
-
-
-### Lunch Break (30 mins: 12:30pm - 1:00pm)
+### Lunch Break (45 mins: 12:00pm - 12:45pm)
 - Minecraft Bingo
 
-
-### Electronics (60 mins 2:45pm - 3:45pm)
+### Minecraft Programming (90 mins: 12:45pm - 2:15pm)
+- [Instructions](MINECRAFT_PROGRAMMING.md)
+- [Jupyter Notebook](notebook/)
+- 
+### Electronics (90 mins 2:15pm - 3:45pm)
 - [Instructions](MINECRAFT_ELECTRONICS.md)
-
+- [Jupyter Notebook](notebook/)
