@@ -1,3 +1,5 @@
+:warning: These instructons have been deprecated in favor of [Jupyter Notebook](notebook/)
+
 # Electronics / GPIO (General Purpose IO)
 
 ## Introduction
